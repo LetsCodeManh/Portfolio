@@ -1,8 +1,6 @@
 "use client";
 import "../styles/globals.css";
-import { Quicksand } from "@next/font/google";
-import { ThemeProvider } from "next-themes";import Navigation from "@/components/Navigation";
-const quicksand = Quicksand({ subsets: ["latin"] });
+import { ThemeProvider } from "next-themes";
 
 export default function RootLayout({
   children,
@@ -12,9 +10,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body className={quicksand.className}>
+      <body>
         <ThemeProvider enableSystem={true} attribute="class">
-          <Navigation />
           {children}
         </ThemeProvider>
       </body>
