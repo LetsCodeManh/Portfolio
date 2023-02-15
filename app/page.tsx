@@ -17,7 +17,7 @@ export default function Home() {
       <header className={quicksand.className}>
         <Navigation />
       </header>
-      <main className={quicksand.className}>
+      <main className={`${quicksand.className}z-0`}>
         <Hero />
         <About />
         <Projects />

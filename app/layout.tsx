@@ -1,5 +1,6 @@
 "use client";
 import "../styles/globals.css";
+import "../styles/styles.css"
 import { ThemeProvider } from "next-themes";
 
 export default function RootLayout({
