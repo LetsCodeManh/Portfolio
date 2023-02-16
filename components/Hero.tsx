@@ -7,7 +7,10 @@ import { fadeIn } from "./utils/motion";
 
 const Hero = () => {
   return (
-    <section id="home" className="flex flex-col space-y-8 justify-center px-[5%] sm:px-[10%] md:px-[10%] lg:px-[15%] relative overflow-hidden">
+    <section
+      id="home"
+      className="flex flex-col space-y-8 justify-center px-[5%] sm:px-[10%] md:px-[10%] lg:px-[15%] relative overflow-hidden"
+    >
       <div className="flex flex-col justify-center gap-4 text-center lg:text-left lg:items-start">
         <motion.h2
           initial="hidden"
@@ -23,7 +26,7 @@ const Hero = () => {
           variants={fadeIn("up", "tween", 0.3, 1)}
           className="header font-semibold text-dark dark:text-dark"
         >
-          I'm Manh, a<br />
+          I&apos;m Manh, a<br />
           Web Developer
         </motion.h1>
         <motion.p
@@ -32,7 +35,7 @@ const Hero = () => {
           variants={fadeIn("up", "tween", 0.6, 1)}
           className="text font-normal text-secondary dark:text-primary lg:max-w-[750px]"
         >
-          with experience in business, design, and coding. I'm passionate about
+          with experience in business, design, and coding. I&apos;m passionate about
           using technology to{" "}
           <span className="font-semibold text-dark">
             solve complex problems
@@ -41,11 +44,11 @@ const Hero = () => {
           <span className="font-semibold text-dark">
             bring your vision to life
           </span>{" "}
-          . If you're looking for a talented and dedicated developer to help
+          .If you&apos;re looking for a talented and dedicated developer to help
           your company succeed and grow,{" "}
-          <span className="font-semibold text-dark">I'm here to help</span>.
+          <span className="font-semibold text-dark">I&apos;m here to help</span>.
           Take a look at what I can offer and{" "}
-          <span className="font-semibold text-dark">let's work together</span>{" "}
+          <span className="font-semibold text-dark">let&apos;s work together</span>{" "}
           to create something great.
         </motion.p>
         <motion.div
@@ -78,7 +81,7 @@ const Hero = () => {
         <motion.a
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{delay: 2}}
+          transition={{ delay: 2 }}
           className="flex justify-center items-center"
           href="#about"
         >

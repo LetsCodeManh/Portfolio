@@ -11,6 +11,7 @@ function About() {
         <motion.img
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.1 }}
           src="./Profilbild.jpg"
           className="rounded-2xl object-cover md:-translate-x-[150px] translate-y-[25px]"
         />
@@ -36,7 +37,7 @@ function About() {
           >
             Hi,{" "}
             <span className="font-semibold text-dark">
-              I'm Manh, a Full-Stack developer
+              I&apos;m Manh, a Full-Stack developer
             </span>{" "}
             looking to make a career change. With{" "}
             <span className="font-semibold text-dark">
