@@ -1,4 +1,5 @@
 "use client";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import { heroSectionIcons } from "./constants";
@@ -6,7 +7,7 @@ import { fadeIn } from "./utils/motion";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col space-y-8 justify-center px-[5%] sm:px-[10%] md:px-[10%] lg:px-[15%] relative overflow-hidden">
+    <section id="home" className="flex flex-col space-y-8 justify-center px-[5%] sm:px-[10%] md:px-[10%] lg:px-[15%] relative overflow-hidden">
       <div className="flex flex-col justify-center gap-4 text-center lg:text-left lg:items-start">
         <motion.h2
           initial="hidden"
@@ -58,11 +59,11 @@ const Hero = () => {
               initial="hidden"
               whileInView="show"
               variants={fadeIn("up", "tween", index * 0.5, 1)}
-              whileHover={{ scale: 1.2 }}
+              whileHover={{ scale: 1.2, borderRadius: "50%" }}
               whileTap={{ scale: 0.9 }}
               href={icon.link}
               key={index}
-              className="flex justify-center items-center h-14 w-14 rounded-full bg-secondary dark:bg-primary transition-colors duration-200"
+              className="flex justify-center items-center h-14 w-14 rounded-2xl bg-secondary dark:bg-primary transition-colors duration-200"
             >
               <FontAwesomeIcon
                 icon={icon.icon}
@@ -72,6 +73,21 @@ const Hero = () => {
             </motion.a>
           ))}
         </motion.div>
+      </div>
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden sm:block">
+        <motion.a
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{delay: 2}}
+          className="flex justify-center items-center"
+          href="#about"
+        >
+          <FontAwesomeIcon
+            icon={faArrowDown}
+            className="animate-bounce"
+            size="3x"
+          />
+        </motion.a>
       </div>
     </section>
   );

@@ -1,11 +1,13 @@
 export const backgroundNav = () => ({
   open: {
+    opacity: 1,
     scale: 100,
     transition: {
       delay: 0,
     },
   },
   close: {
+    opacity: 0,
     scale: 1,
     transition: {
       delay: 0.5,

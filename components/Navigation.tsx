@@ -17,7 +17,11 @@ const Navigation = () => {
 
   return (
     <>
-      <button
+      <motion.button
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.9 }}
         className={`navigation__hamburger fixed sm:top-12 sm:right-12 top-6 right-6 z-50 h-16 w-16 rounded-full cursor-pointer border-none shadow-2xl transition-colors duration-250 ${
           isActive ? "is-active" : ""
         } ${
@@ -46,9 +50,10 @@ const Navigation = () => {
             d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70"
           ></path>
         </svg>
-      </button>
+      </motion.button>
 
       <motion.div
+        initial={{ opacity: 0 }}
         animate={isActive ? "open" : "close"}
         variants={backgroundNav()}
         className={`fixed sm:top-14 sm:right-14 top-8 right-8 z-10  h-12 w-12 rounded-full bg-secondary dark:bg-primary`}
@@ -61,7 +66,7 @@ const Navigation = () => {
           isActive ? "pointer-events" : "pointer-events-none"
         }`}
       >
-        <ul className="flex flex-col justify-center h-screen w-screen gap-8">
+        <ul className="flex flex-col justify-center h-screen w-screen gap-4">
           {sections.map((section, index) => (
             <motion.li
               animate={isActive ? "open" : "close"}
@@ -86,12 +91,12 @@ const Navigation = () => {
         >
           {socials.map((social, index) => (
             <motion.a
-              whileHover={{ scale: 1.2 }}
+              whileHover={{ scale: 1.2, borderRadius: "50%" }}
               whileTap={{ scale: 0.9 }}
               href={social.link}
               target="_blank"
               key={index}
-              className="flex justify-center items-center h-14 w-14 rounded-full bg-primary dark:bg-secondary transition-colors duration-200"
+              className="flex justify-center items-center h-14 w-14 rounded-2xl bg-primary dark:bg-secondary transition-colors duration-200"
             >
               <FontAwesomeIcon
                 icon={social.icon}
@@ -103,10 +108,10 @@ const Navigation = () => {
 
           {currentTheme === "dark" ? (
             <motion.button
-              whileHover={{ scale: 1.2 }}
+              whileHover={{ scale: 1.2, borderRadius: "50%" }}
               whileTap={{ scale: 0.9 }}
               onClick={() => setTheme("light")}
-              className="h-14 w-14  rounded-full bg-primary dark:bg-secondary border-2 border-secondary dark:border-primary transition-colors duration-200"
+              className="h-14 w-14  rounded-2xl bg-primary dark:bg-secondary  transition-colors duration-200"
             >
               <FontAwesomeIcon
                 icon={faSun}
@@ -116,10 +121,10 @@ const Navigation = () => {
             </motion.button>
           ) : (
             <motion.button
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.2, borderRadius: "50%" }}
               whileTap={{ scale: 0.9 }}
               onClick={() => setTheme("dark")}
-              className="h-14 w-14  rounded-full bg-primary dark:bg-secondary border-2 border-secondary dark:border-primary transition-colors duration-200"
+              className="h-14 w-14  rounded-2xl bg-primary dark:bg-secondary transition-colors duration-200"
             >
               <FontAwesomeIcon
                 icon={faMoon}

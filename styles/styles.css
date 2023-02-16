@@ -18,6 +18,6 @@
 }
 
 .navigation__link {
-  font-size: clamp(2rem, 8vmin, 7rem);
-  padding: clamp(0.25em, 1vmin, 1em) clamp(1em, 4vmin, 4em);
+  font-size: clamp(2rem, 8vmin, 6rem);
+  padding: clamp(0.25em, 1vmin, 1em) clamp(1em, 15vmin, 10em);
 }
