@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function About() {
   return (
-    <section>About</section>
-  )
+    <section className="snap-start bg-slate-500 snap-mandatory snap-x ">
+      
+    </section>
+  );
 }
 
-export default About
+export default About;

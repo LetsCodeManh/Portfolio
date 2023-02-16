@@ -14,10 +14,12 @@ const quicksand = Quicksand({
 export default function Home() {
   return (
     <>
-      <header className={quicksand.className}>
+      <header className={`${quicksand.className} relative`}>
         <Navigation />
       </header>
-      <main className={`${quicksand.className}z-0`}>
+      <main
+        className={`${quicksand.className} z-0 bg-primary dark:bg-secondary`}
+      >
         <Hero />
         <About />
         <Projects />
