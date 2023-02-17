@@ -1,38 +1,52 @@
 "use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
+import { useRef } from "react";
 import { aboutSectionIcons } from "./constants";
 import { fadeIn } from "./utils/motion";
 
 function About() {
+  const constraintsRef = useRef(null);
+
   return (
-    <section id="about" className="flex flex-col space-y-8 justify-center px-[5%] sm:px-[10%] md:px-[10%] lg:px-[15%] relative">
-      <div className="display flex flex-col justify-center items-center">
+    <section
+      id="about"
+      className="flex flex-col space-y-8 justify-center px-[5%] sm:px-[10%] md:px-[10%] lg:px-[15%] relative"
+    >
+      <div
+        className="display flex flex-col justify-center items-center"
+        ref={constraintsRef}
+      >
         <motion.img
+          drag
+          whileDrag={{ zIndex: 10 }}
+          dragConstraints={constraintsRef}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.1 }}
           src="./Profilbild.jpg"
-          className="rounded-2xl object-cover md:-translate-x-[150px] translate-y-[25px]"
+          className="rounded-2xl w-96 object-cover lg:-translate-x-[150px] translate-y-[25px] xl:translate-y-50px"
         />
         <motion.div
+          drag
+          dragConstraints={constraintsRef}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.25 }}
-          className="bg-secondary dark:bg-primary -translate-y-[25px] xl:translate-x-[200px] p-8 rounded-2xl flex flex-col gap-4 max-w-[750px]"
+          className="bg-secondary dark:bg-primary -translate-y-[25px] xl:translate-x-[200px] xl:-translate-y-[50px] p-8 rounded-2xl flex flex-col gap-4 max-w-[750px]"
         >
           <motion.h1
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.25 }}
+            initial="hidden"
+            whileInView="show"
+            variants={fadeIn("up", "tween", 0.3, 1)}
             className="header font-semibold text-dark dark:text-dark"
           >
             About Me...
           </motion.h1>
           <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
+            initial="hidden"
+            whileInView="show"
+            variants={fadeIn("up", "tween", 0.3, 1)}
             className="text font-normal text-primary dark:text-secondary"
           >
             Hi,{" "}
@@ -81,10 +95,10 @@ function About() {
               </motion.a>
             ))}
             <motion.a
-              whileHover={{ scale: 1.2, borderRadius: "50%" }}
+              whileHover={{ scale: 1.2, borderRadius: "3.5rem" }}
               whileTap={{ scale: 0.9 }}
               href="#nothing"
-              className="flex justify-center items-center h-14 px-4 rounded-2xl bg-primary dark:bg-secondary transition-colors duration-200 text-dark dark:text-dark font-semibold text-lg"
+              className="flex justify-center items-center h-14 px-4 rounded-2xl bg-primary dark:bg-secondary transition-colors duration-200 text-dark dark:text-dark font-extrabold text-lg"
             >
               More!
             </motion.a>

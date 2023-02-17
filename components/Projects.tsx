@@ -1,8 +1,14 @@
-import React from 'react'
+"use client"
 
-function Projects() {
+import { motion } from "framer-motion"
+
+const Projects = () => {
   return (
-    <section>Projects</section>
+    <section>
+      <div>
+        <h1>Projects</h1>
+      </div>
+    </section>
   )
 }
 
