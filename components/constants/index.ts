@@ -1,5 +1,12 @@
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import {
+  faCss3,
+  faCss3Alt,
+  faGithub,
+  faHtml5,
+  faJs,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
   faFileAlt,
@@ -82,5 +89,109 @@ export const aboutSectionIcons: aboutSectionIcon[] = [
   {
     link: "linkedin.com/in/manh-nguyen-0a094524b",
     icon: faLinkedinIn,
+  },
+];
+
+type Technology = {
+  icon: IconDefinition;
+  color: string;
+};
+
+type projects = {
+  id: string;
+  image: string;
+  title: string;
+  technology: Technology[];
+  interact: [
+    {
+      icon: IconDefinition;
+      link: string;
+      live: string;
+      caseStudy: string;
+    }
+  ];
+};
+
+export const projectSectionInfo: projects[] = [
+  {
+    id: "1",
+    image: "/Zelda.png",
+    title: "Zelda Hyrule Compendium",
+    technology: [
+      {
+        icon: faHtml5,
+        color: "#E44D26",
+      },
+      {
+        icon: faCss3Alt,
+        color: "#1572B6",
+      },
+      {
+        icon: faJs,
+        color: "#F7DF1E",
+      },
+    ],
+    interact: [
+      {
+        icon: faGithub,
+        link: "https://github.com/LetsCodeManh/Hyrule-Compendium-js-app",
+        live: "https://letscodemanh.github.io/Hyrule-Compendium-js-app/",
+        caseStudy: "#",
+      },
+    ],
+  },
+  {
+    id: "2",
+    image: "/Olga.png",
+    title: "Olga",
+    technology: [
+      {
+        icon: faHtml5,
+        color: "#E44D26",
+      },
+      {
+        icon: faCss3,
+        color: "#1572B6",
+      },
+      {
+        icon: faJs,
+        color: "#F7DF1E",
+      },
+    ],
+    interact: [
+      {
+        icon: faGithub,
+        link: "https://github.com/LetsCodeManh/Hyrule-Compendium-js-app",
+        live: "https://letscodemanh.github.io/Hyrule-Compendium-js-app/",
+        caseStudy: "#",
+      },
+    ],
+  },
+  {
+    id: "3",
+    image: "/Portfolio.png",
+    title: "Portfolio",
+    technology: [
+      {
+        icon: faHtml5,
+        color: "#E44D26",
+      },
+      {
+        icon: faCss3,
+        color: "#1572B6",
+      },
+      {
+        icon: faJs,
+        color: "#F7DF1E",
+      },
+    ],
+    interact: [
+      {
+        icon: faGithub,
+        link: "https://github.com/LetsCodeManh/Hyrule-Compendium-js-app",
+        live: "https://letscodemanh.github.io/Hyrule-Compendium-js-app/",
+        caseStudy: "#",
+      },
+    ],
   },
 ];

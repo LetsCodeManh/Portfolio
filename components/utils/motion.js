@@ -50,3 +50,13 @@ export const fadeIn = (direction, type, delay, duration) => ({
     },
   },
 });
+
+export const container = (staggerChildren, delayChildren) => ({
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren,
+      delayChildren,
+    },
+  },
+});

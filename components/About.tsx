@@ -13,14 +13,8 @@ function About() {
       id="about"
       className="flex flex-col space-y-8 justify-center px-[5%] sm:px-[10%] md:px-[10%] lg:px-[15%] relative"
     >
-      <div
-        className="display flex flex-col justify-center items-center"
-        ref={constraintsRef}
-      >
+      <div className="display flex flex-col justify-center items-center">
         <motion.img
-          drag
-          whileDrag={{ zIndex: 10 }}
-          dragConstraints={constraintsRef}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.1 }}
@@ -28,8 +22,6 @@ function About() {
           className="rounded-2xl w-96 object-cover lg:-translate-x-[150px] translate-y-[25px] xl:translate-y-50px"
         />
         <motion.div
-          drag
-          dragConstraints={constraintsRef}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.25 }}
@@ -41,7 +33,7 @@ function About() {
             variants={fadeIn("up", "tween", 0.3, 1)}
             className="header font-semibold text-dark dark:text-dark"
           >
-            About Me...
+            | About Me
           </motion.h1>
           <motion.p
             initial="hidden"
