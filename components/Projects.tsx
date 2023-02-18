@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex flex-col space-y-8 justify-center px-[5%] sm:px-[10%] md:px-[10%] lg:px-[15%] relative"
+      className="flex flex-col space-y-8 justify-center px-[5%] sm:px-[10%] md:px-[15%] lg:px-[20%] relative h-screen my-12"
     >
       <div className="flex flex-col gap-10">
         <h1 className="header font-semibold text-dark dark:text-primary">

@@ -3,7 +3,7 @@
 import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { sections, socials } from "./constants";
+import { sections, socials } from "./constants/navigation";
 import { backgroundNav, itemNav } from "./utils/motion";
 import TextRandomizer from "./TextRandomizer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -111,7 +111,7 @@ const Navigation = () => {
               whileHover={{ scale: 1.2, borderRadius: "50%" }}
               whileTap={{ scale: 0.9 }}
               onClick={() => setTheme("light")}
-              className="h-14 w-14  rounded-2xl bg-primary dark:bg-secondary  transition-colors duration-200"
+              className="h-14 w-14 rounded-2xl bg-primary dark:bg-secondary  transition-colors duration-200"
             >
               <FontAwesomeIcon
                 icon={faSun}

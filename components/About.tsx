@@ -1,17 +1,15 @@
 "use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
-import { useRef } from "react";
-import { aboutSectionIcons } from "./constants";
+import { aboutSectionIcons } from "./constants/about";
 import { fadeIn } from "./utils/motion";
 
 function About() {
-  const constraintsRef = useRef(null);
 
   return (
     <section
       id="about"
-      className="flex flex-col space-y-8 justify-center px-[5%] sm:px-[10%] md:px-[10%] lg:px-[15%] relative"
+      className="flex flex-col space-y-8 justify-center px-[5%] sm:px-[10%] md:px-[15%] lg:px-[20%] relative h-screen my-12"
     >
       <div className="display flex flex-col justify-center items-center">
         <motion.img

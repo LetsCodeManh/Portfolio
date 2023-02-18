@@ -11,10 +11,6 @@
   box-sizing: border-box;
 }
 
-section {
-  min-height: 100vh;
-}
-
 .header {
   font-size: clamp(2rem, 7vmin, 5rem);
   line-height: 1.2;

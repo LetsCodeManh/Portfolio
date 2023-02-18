@@ -2,14 +2,14 @@
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
-import { heroSectionIcons } from "./constants";
+import { heroSectionIcons } from "./constants/hero";
 import { fadeIn } from "./utils/motion";
 
 const Hero = () => {
   return (
     <section
       id="home"
-      className="flex flex-col space-y-8 justify-center px-[5%] sm:px-[10%] md:px-[10%] lg:px-[15%] relative overflow-hidden"
+      className="flex flex-col space-y-8 justify-center px-[5%] sm:px-[10%] md:px-[15%] lg:px-[20%] relative h-screen"
     >
       <div className="flex flex-col justify-center gap-4 text-center lg:text-left lg:items-start">
         <motion.h2
