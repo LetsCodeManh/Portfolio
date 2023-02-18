@@ -1,9 +1,8 @@
 "use client";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { projectSectionInfo } from "./constants";
+import { projectSectionInfo } from "./constants/projects";
 import { fadeIn } from "./utils/motion";
 
 const Projects = () => {
@@ -14,18 +13,16 @@ const Projects = () => {
       id="projects"
       className="flex flex-col space-y-8 justify-center px-[5%] sm:px-[10%] md:px-[10%] lg:px-[15%] relative"
     >
-      <motion.div
-        initial="hidden"
-        whileInView="show"
-        className="flex flex-col gap-10"
-      >
-        <h1 className="header font-semibold text-dark dark:text-dark">
+      <div className="flex flex-col gap-10">
+        <h1 className="header font-semibold text-dark dark:text-primary">
           | Projects
         </h1>
         <div className="flex lg:flex-row flex-col min-h-[70vh] gap-5">
           {projectSectionInfo.map((project, index) => (
             <motion.div
-              variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+              initial="hidden"
+              whileInView="show"
+              variants={fadeIn("up", "spring", index * 0.25, 0.75)}
               key={index}
               className={`relative ${
                 active === project.id
@@ -48,18 +45,9 @@ const Projects = () => {
                   </h2>
                 </>
               ) : (
-                <div className="absolute bottom-0 p-8 flex flex-col gap-2 w-full  bg-dark bg-opacity-60 rounded-b-3xl">
-                  <div className="flex gap-4 items-center">
-                    {project.technology.map((technology, index) => (
-                      <FontAwesomeIcon
-                        icon={technology.icon}
-                        key={index}
-                        color={technology.color}
-                        size="2xl"
-                      />
-                    ))}
-                  </div>
-                  <h2 className="font-semibold sm:text-[32px] text-[24px] text-primary">
+                <div className="absolute bottom-0 p-8 flex flex-col gap-2 w-full  bg-dark bg-opacity-70 rounded-b-3xl text-primary dark:text-primary">
+                  <h3 className="text font-medium">{project.technology}</h3>
+                  <h2 className="font-semibold sm:text-[32px] text-[24px]">
                     {project.title}
                   </h2>
                   {project.interact.map((item, index) => (
@@ -90,7 +78,7 @@ const Projects = () => {
             </motion.div>
           ))}
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };
