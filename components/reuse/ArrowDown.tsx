@@ -1,30 +1,28 @@
-"use client"
+"use client";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 
 type Props = {
-  href: string
-}
+  href: string;
+};
 
-const ArrowDown = ({href}: Props) => {
+const ArrowDown = ({ href }: Props) => {
   return (
-    <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
-      <motion.a
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 1.8 }}
-        className="flex justify-center items-center"
-        href={href}
-      >
-        <FontAwesomeIcon
-          icon={faArrowDown}
-          className="animate-bounce"
-          size="2xl"
-        />
-      </motion.a>
-    </div>
+    <motion.a
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: 1.8 }}
+      href={href}
+      className={`absolute sm:bottom-12 sm:right-12 bottom-6 right-6 h-16 w-16 rounded-full cursor-pointer border-none shadow-2xl transition-colors duration-250 bg-secondary dark:bg-primary hidden sm:flex justify-center items-center`}
+    >
+      <FontAwesomeIcon
+        icon={faArrowDown}
+        className="text-primary dark:text-secondary animate-bounce"
+        size="2xl"
+      />
+    </motion.a>
   );
-}
+};
 
 export default ArrowDown;

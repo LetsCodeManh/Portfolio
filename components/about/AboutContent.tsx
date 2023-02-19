@@ -69,7 +69,7 @@ const AboutContent = () => {
           whileHover={{ scale: 1.2, borderRadius: "3.5rem" }}
           whileTap={{ scale: 0.9 }}
           href="#nothing"
-          className="center h-12 lg:h-12 px-4 rounded-2xl bg-primary dark:bg-secondary text-dark dark:text-dark font-extrabold text-lg"
+          className="center h-12 lg:h-14 px-4 text font-extrabold rounded-2xl bg-primary dark:bg-secondary text-dark dark:text-dark  text-lg"
         >
           More!
         </motion.a>

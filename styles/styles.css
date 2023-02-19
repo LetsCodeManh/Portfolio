@@ -22,6 +22,10 @@
   padding: clamp(0.25em, 1vmin, 1em) clamp(1em, 15vmin, 10em);
 }
 
+.projectLink {
+  @apply font-semibold px-2 border-2 rounded-md
+}
+
 .flexDown {
   @apply flex flex-col justify-center gap-4;
 }

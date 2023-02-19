@@ -5,7 +5,7 @@ import ArrowDown from "./reuse/ArrowDown";
 
 const About = () => {
   return (
-    <section id="about" className={`justify-center py-12`}>
+    <section id="about" className={`justify-center py-12 `}>
       <div className="downCenter">
         <motion.img
           initial={{ opacity: 0 }}
