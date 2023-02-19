@@ -9,7 +9,7 @@ type Props = {
 
 const ArrowDown = ({href}: Props) => {
   return (
-    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden sm:block">
+    <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
       <motion.a
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

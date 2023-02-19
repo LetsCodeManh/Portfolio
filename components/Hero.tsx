@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className={`justify-center`}
+      className={`justify-center py-12`}
     >
       <HeroContent />
       <ArrowDown href="#about" />

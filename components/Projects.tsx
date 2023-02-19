@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className={`${styles.section} justify-center relative min-h-screen my-12`}
+      className={`justify-center py-12`}
     >
       <div className="flex flex-col gap-10">
         <h1 className="header font-semibold text-dark dark:text-primary">
