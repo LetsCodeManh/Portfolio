@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import AboutContent from "./about/AboutContent";
-import ArrowDown from "./reuse/ArrowDown";
 
 const About = () => {
   return (
@@ -15,7 +14,6 @@ const About = () => {
           className="rounded-2xl w-72 lg:w-96 object-cover -translate-x-[200px] translate-y-[50px] xl:translate-y-50px hidden md:block"
         />
         <AboutContent />
-        <ArrowDown href="#projects" />
       </div>
     </section>
   );

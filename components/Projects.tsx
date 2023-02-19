@@ -1,6 +1,4 @@
 import ProjectContainer from "./projects/ProjectContainer";
-import ArrowDown from "./reuse/ArrowDown";
-
 
 const Projects = () => {
 
@@ -14,7 +12,6 @@ const Projects = () => {
           | Projects
         </h2>
         <ProjectContainer />
-        <ArrowDown href="#contact"/>
       </div>
     </section>
   );

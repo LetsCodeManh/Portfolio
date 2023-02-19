@@ -1,5 +1,4 @@
 import HeroContent from "./hero/HeroContent";
-import ArrowDown from "./reuse/ArrowDown";
 
 const Hero = () => {
   return (
@@ -8,7 +7,6 @@ const Hero = () => {
       className={`justify-center py-12`}
     >
       <HeroContent />
-      <ArrowDown href="#about" />
     </section>
   );
 };
