@@ -16,7 +16,7 @@ const Contact = () => {
           | Contact
         </h2>
         <h3 className="text">
-          Let's collaborate and create something amazing together!
+          Let&apos;s collaborate and create something amazing together!
         </h3>
         <div className="flex flex-col">
           <a href="tel:0176-21437917">+49 176 21437917 </a>
@@ -93,7 +93,7 @@ const Contact = () => {
           type="submit"
           className="bg-primary p-4 rounded-xl text"
         >
-          Let's work together
+          Let&apos;s work together
         </motion.button>
       </form>
     </section>

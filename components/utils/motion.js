@@ -41,7 +41,7 @@ export const fadeIn = (direction, type, delay, duration) => ({
     x: 0,
     y: 0,
     opacity: 1,
-    scale: [1.1, 1],
+    scale: 1,
     transition: {
       type,
       delay,
