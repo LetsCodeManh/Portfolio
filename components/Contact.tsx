@@ -4,12 +4,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { contactSectionSocials } from "./constants/contact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from "@/styles/styles";
 
 const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col gap-4 lg:flex-row lg:space-between px-[5%] sm:px-[10%] md:px-[15%] lg:px-[20%] my-12"
+      className={`${styles.section} gap-4 my-12 lg:flex-row lg:space-between`}
     >
       <div className="flex flex-col gap-6 flex-1">
         <h2 className="header font-semibold text-dark dark:text-dark">

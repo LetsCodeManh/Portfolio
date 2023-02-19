@@ -21,3 +21,23 @@
   font-size: clamp(2rem, 8vmin, 6rem);
   padding: clamp(0.25em, 1vmin, 1em) clamp(1em, 15vmin, 10em);
 }
+
+.flexDown {
+  @apply flex flex-col justify-center gap-4;
+}
+
+.flexSide {
+  @apply flex gap-4 justify-center;
+}
+
+.center {
+  @apply flex justify-center items-center;
+}
+
+.downCenter {
+  @apply flex flex-col justify-center items-center;
+}
+
+.square {
+  @apply center h-12 w-12 lg:h-14 lg:w-14 rounded-2xl;
+}

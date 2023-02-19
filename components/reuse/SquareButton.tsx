@@ -27,9 +27,9 @@ const SquareButton = ({
       whileTap={{ scale: 0.9 }}
       href={link}
       target={target}
-      className={`${stylesButton} ${styles.square}`}
+      className={`${stylesButton} square`}
     >
-      <FontAwesomeIcon icon={icon} className={`${stylesIcon}`} size="2xl" />
+      <FontAwesomeIcon icon={icon} className={`${stylesIcon}`} size="xl" />
     </motion.a>
   );
 };

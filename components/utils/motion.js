@@ -32,8 +32,8 @@ export const itemNav = (index) => ({
 
 export const fadeIn = (direction, type, delay, duration) => ({
   hidden: {
-    x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
-    y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
+    x: direction === "left" ? 50 : direction === "right" ? -50 : 0,
+    y: direction === "up" ? 50 : direction === "down" ? -50 : 0,
     opacity: 0,
     scale: 0,
   },
@@ -51,12 +51,11 @@ export const fadeIn = (direction, type, delay, duration) => ({
   },
 });
 
-export const container = (staggerChildren, delayChildren) => ({
+export const stagger = (staggerChildren) => ({
   hidden: {},
   show: {
     transition: {
       staggerChildren,
-      delayChildren,
     },
   },
 });

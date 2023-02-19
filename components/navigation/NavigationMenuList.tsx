@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { sections } from "../constants/navigation";
-import TextRandomizer from "../TextRandomizer";
+import TextRandomizer from "../reuse/TextRandomizer";
 import { itemNav } from "../utils/motion";
 
 type Props = {

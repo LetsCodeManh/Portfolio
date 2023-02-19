@@ -1,4 +1,5 @@
 "use client";
+import styles from "@/styles/styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -11,7 +12,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex flex-col space-y-8 justify-center px-[5%] sm:px-[10%] md:px-[15%] lg:px-[20%] relative h-screen my-12"
+      className={`${styles.section} justify-center relative min-h-screen my-12`}
     >
       <div className="flex flex-col gap-10">
         <h1 className="header font-semibold text-dark dark:text-primary">

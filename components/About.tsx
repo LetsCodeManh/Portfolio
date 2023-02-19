@@ -5,13 +5,9 @@ import { aboutSectionIcons } from "./constants/about";
 import { fadeIn } from "./utils/motion";
 
 function About() {
-
   return (
-    <section
-      id="about"
-      className="flex flex-col space-y-8 justify-center px-[5%] sm:px-[10%] md:px-[15%] lg:px-[20%] relative h-screen my-12"
-    >
-      <div className="display flex flex-col justify-center items-center">
+    <section id="about" className={`justify-center py-12`}>
+      <div className="downCenter">
         <motion.img
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -28,7 +24,7 @@ function About() {
           <motion.h1
             initial="hidden"
             whileInView="show"
-            variants={fadeIn("up", "tween", 0.3, 1)}
+            variants={fadeIn("up", "tween", 0, 1)}
             className="header font-semibold text-dark dark:text-dark"
           >
             | About Me
@@ -39,31 +35,25 @@ function About() {
             variants={fadeIn("up", "tween", 0.3, 1)}
             className="text font-normal text-primary dark:text-secondary"
           >
-            Hi,{" "}
-            <span className="font-semibold text-dark">
-              I&apos;m Manh, a Full-Stack developer
-            </span>{" "}
-            looking to make a career change. With{" "}
-            <span className="font-semibold text-dark">
-              a background in business, design, and coding,
-            </span>{" "}
-            my experience creating my own business has given me an excellent
+            Hi, <span>I&apos;m Manh, a Full-Stack developer</span> looking to
+            make a career change. With
+            <span> a background in business, design, and coding,</span> my
+            experience creating my own business has given me an excellent
             understanding of the consumer perspective and experience with web
-            design.{" "}
-            <span className="font-semibold text-dark">
+            design.
+            <span>
+              {" "}
               My goal as a developer is to join a dynamic company where I can
               utilize my knowledge and expertise to help the company to succeed
               and grow.
             </span>{" "}
             I am passionate about using technology to create solutions and{" "}
-            <span className="font-semibold text-dark">
-              solve complex problems.
-            </span>
+            <span>solve complex problems.</span>
           </motion.p>
           <motion.div
             initial="hidden"
             whileInView="show"
-            variants={fadeIn("up", "tween", 0.5, 1)}
+            variants={fadeIn("up", "tween", 0.6, 1)}
             className="flex gap-4"
           >
             {aboutSectionIcons.map((icon, index) => (
