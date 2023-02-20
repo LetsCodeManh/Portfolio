@@ -7,24 +7,20 @@ import { fadeIn } from "../utils/motion";
 const AboutContent = () => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ delay: 0.6 }}
-      className="bg-secondary dark:bg-primary p-8  lg:p-12 xl:p-16 rounded-2xl flex flex-col gap-4"
+      initial="hidden"
+      whileInView="show"
+      variants={fadeIn("up", "tween", 0, .5)}
+      className="bg-secondary dark:bg-primary p-8  lg:p-12 xl:p-16 rounded-2xl flex flex-col gap-4 shadow-2xl"
     >
-      <motion.h2
-        initial="hidden"
-        whileInView="show"
+      <motion.h1
         variants={fadeIn("up", "tween", 0, 1)}
-        className=" text-dark dark:text-dark"
+        className="subheader text-dark dark:text-dark"
       >
         | About Me
-      </motion.h2>
+      </motion.h1>
       <motion.p
-        initial="hidden"
-        whileInView="show"
         variants={fadeIn("up", "tween", 0.3, 1)}
-        className=" text-primary dark:text-secondary"
+        className="text text-primary dark:text-secondary"
       >
         Hi, <span>I&apos;m Manh, a Full-Stack developer</span> looking to make a
         career change. With
@@ -42,8 +38,6 @@ const AboutContent = () => {
         <span>solve complex problems.</span>
       </motion.p>
       <motion.div
-        initial="hidden"
-        whileInView="show"
         variants={fadeIn("up", "tween", 0.6, 1)}
         className="flex gap-4"
       >

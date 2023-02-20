@@ -100,7 +100,7 @@ const ContactForm = () => {
         aria-label="Send messages to Manh"
         className="bg-primary dark:bg-secondary p-4 rounded-xl text font-semibold"
       >
-        Let&apos;s work together
+        Let&apos;s work together!
       </motion.button>
     </motion.form>
   );

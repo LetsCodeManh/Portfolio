@@ -18,7 +18,7 @@ type projects = {
   ];
 };
 
-export const projectSectionInfo: projects[] = [
+export const projectsFrontend: projects[] = [
   {
     id: "1",
     image: "/Portfolio.png",

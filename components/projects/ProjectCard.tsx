@@ -1,18 +1,16 @@
-"use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useState } from "react";
 import { fadeIn } from "../utils/motion";
 
 type Props = {
   project: any;
   index: number;
+  active: string;
+  setActive: (active: string) => void;
 };
 
-const ProjectCard = ({ project, index }: Props) => {
-  const [active, setActive] = useState("2");
-
+const ProjectCard = ({ project, index, active, setActive }: Props) => {
   return (
     <motion.div
       initial="hidden"
@@ -23,7 +21,7 @@ const ProjectCard = ({ project, index }: Props) => {
         active === project.id
           ? "lg:flex-[2.5] flex-[10]"
           : "lg:flex-[0.5] flex-[2] cursor-pointer"
-      } center transition-[flex] duration-[0.7s]`}
+      } center transition-[flex] duration-[0.7s] rounded-3xl overflow-hidden`}
       onClick={() => setActive(project.id)}
     >
       <Image
@@ -32,20 +30,20 @@ const ProjectCard = ({ project, index }: Props) => {
         fill
         priority={false}
         sizes="max-width: 700px"
-        className="absolute w-full h-full object-cover rounded-3xl"
+        className="absolute w-full h-full object-cover"
       />
 
       {active !== project.id ? (
         <>
-          <div className="absolute w-full h-full bg-dark rounded-3xl bg-opacity-60" />
-          <h4 className="text-primary absolute z-0 lg:bottom-20 lg:rotate-[-90deg]">
+          <div className="absolute w-full h-full bg-dark bg-opacity-60" />
+          <h2 className="bigText text-primary absolute z-0 lg:bottom-20 lg:rotate-[-90deg]">
             {project.title}
-          </h4>
+          </h2>
         </>
       ) : (
-        <div className="absolute bottom-0 p-6 flex flex-col gap-2 w-full bg-dark bg-opacity-70 rounded-b-3xl text-primary dark:text-primary">
-          <p>{project.technology}</p>
-          <h3>{project.title}</h3>
+        <div className="absolute bottom-0 p-6 flex flex-col gap-2 w-full bg-dark bg-opacity-70 text-primary dark:text-primary">
+          <p className="text">{project.technology}</p>
+          <h2 className="biggerText">{project.title}</h2>
           {project.interact.map((item: any, index: number) => (
             <div key={index} className="flex gap-4 items-center">
               <a href={item.link} aria-label={item.labelIcon}>
