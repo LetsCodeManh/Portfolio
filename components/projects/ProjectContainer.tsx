@@ -6,10 +6,11 @@ type Props = {
   sectionId: string;
   sectionTitle: string;
   projectInfo: any;
+  number: string
 };
 
-const ProjectContainer = ({ sectionId, sectionTitle, projectInfo }: Props) => {
-  const [active, setActive] = useState("2");
+const ProjectContainer = ({ sectionId, sectionTitle, projectInfo, number }: Props) => {
+  const [active, setActive] = useState(`${number}`);
 
   return (
     <section id={sectionId} className={`justify-center py-12 min-h-screen`}>

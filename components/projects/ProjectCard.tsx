@@ -21,7 +21,7 @@ const ProjectCard = ({ project, index, active, setActive }: Props) => {
         active === project.id
           ? "lg:flex-[2.5] flex-[10]"
           : "lg:flex-[0.5] flex-[2] cursor-pointer"
-      } center transition-[flex] duration-[0.7s] rounded-3xl overflow-hidden`}
+      } center transition-[flex] duration-[0.7s] rounded-3xl overflow-hidden shadow-2xl`}
       onClick={() => setActive(project.id)}
     >
       <Image
