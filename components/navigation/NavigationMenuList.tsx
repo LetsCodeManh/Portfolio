@@ -5,9 +5,10 @@ import { itemNav } from "../utils/motion";
 
 type Props = {
   isActive: boolean;
+  setIsActive: (isAcive: boolean) => void;
 };
 
-const NavigationMenuList = ({ isActive }: Props) => {
+const NavigationMenuList = ({ isActive, setIsActive }: Props) => {
   return (
     <ul className="flex flex-col gap-4 justify-center h-screen w-screen ">
       {sections.map((section, index) => (
@@ -22,6 +23,7 @@ const NavigationMenuList = ({ isActive }: Props) => {
             whileTap={{ scale: 0.9 }}
             href={section.href}
             className="navigation__link font-semibold relative block text-primary dark:text-secondary hover:text-dark dark:hover:text-dark"
+            onClick={() => setIsActive(false)}
           >
             <TextRandomizer text={section.label} />
           </motion.a>

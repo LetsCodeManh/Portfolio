@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className={`justify-center py-12`}
+      className={`justify-center py-12 min-h-screen`}
     >
       <HeroContent />
     </section>

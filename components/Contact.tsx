@@ -3,7 +3,7 @@ import ContactForm from "./contact/ContactForm";
 
 const Contact = () => {
   return (
-    <section id="contact" className={`py-12`}>
+    <section id="contact" className={`py-12 gap-12`}>
       <ContactDetails />
       <ContactForm />
     </section>

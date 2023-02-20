@@ -1,7 +1,6 @@
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
-import styles from "../../styles/styles";
 
 type Props = {
   stylesButton: string;

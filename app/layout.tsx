@@ -1,7 +1,6 @@
-"use client";
 import "../styles/globals.css";
-import "../styles/styles.css"
-import { ThemeProvider } from "next-themes";
+import "../styles/styles.css";
+import { Provider } from "./provider";
 
 export default function RootLayout({
   children,
@@ -12,9 +11,7 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <body>
-        <ThemeProvider enableSystem={true} attribute="class">
-          {children}
-        </ThemeProvider>
+        <Provider>{children}</Provider>
       </body>
     </html>
   );

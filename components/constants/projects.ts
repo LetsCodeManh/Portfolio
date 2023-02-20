@@ -1,12 +1,5 @@
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import {
-  faCss3Alt,
-  faGithub,
-  faHtml5,
-  faJs,
-  faReact,
-} from "@fortawesome/free-brands-svg-icons";
-import { faLanguage } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 type projects = {
   id: string;
@@ -18,6 +11,8 @@ type projects = {
       icon: IconDefinition;
       link: string;
       live: string;
+      labelIcon: string;
+      labelLive: string;
       caseStudy: string;
     }
   ];
@@ -34,6 +29,8 @@ export const projectSectionInfo: projects[] = [
         icon: faGithub,
         link: "https://github.com/LetsCodeManh/ManhPortfolio",
         live: "https://letscodemanh.github.io/ManhPortfolio/",
+        labelIcon: "Visit my past Portfolio Repository",
+        labelLive: "Visit my past Portfolio Live Website",
         caseStudy: "#",
       },
     ],
@@ -48,6 +45,8 @@ export const projectSectionInfo: projects[] = [
         icon: faGithub,
         link: "https://github.com/LetsCodeManh/manh-nguyen",
         live: "https://manhngdev.com/",
+        labelIcon: "Visit my latest Portfolio Repository",
+        labelLive: "Visit my latest Portfolio Live Website",
         caseStudy: "#",
       },
     ],
@@ -62,6 +61,8 @@ export const projectSectionInfo: projects[] = [
         icon: faGithub,
         link: "https://github.com/LetsCodeManh/Hyrule-Compendium-js-app",
         live: "https://letscodemanh.github.io/Hyrule-Compendium-js-app/",
+        labelIcon: "Visit my Zelda Repository",
+        labelLive: "Visit Zelda Live Website",
         caseStudy: "#",
       },
     ],
@@ -76,6 +77,8 @@ export const projectSectionInfo: projects[] = [
         icon: faGithub,
         link: "https://github.com/LetsCodeManh/OlgaWebsite",
         live: "https://letscodemanh.github.io/OlgaWebsite/",
+        labelIcon: "Visit my Consulting Repository",
+        labelLive: "Visit Consulting Live Website",
         caseStudy: "#",
       },
     ],
@@ -90,6 +93,8 @@ export const projectSectionInfo: projects[] = [
         icon: faGithub,
         link: "https://github.com/LetsCodeManh/myFlix-Angular-Client",
         live: "https://letscodemanh.a.io/myFlix-Angular-Client/welcome",
+        labelIcon: "Visit my myFlix Repository",
+        labelLive: "Visit myFlix Live Website",
         caseStudy: "#",
       },
     ],
@@ -104,6 +109,8 @@ export const projectSectionInfo: projects[] = [
         icon: faGithub,
         link: "https://github.com/LetsCodeManh/myFlix-client",
         live: "https://myflix-test-website.netlify.app/login",
+        labelIcon: "Visit my myFlix Repository",
+        labelLive: "Visit myFlix Live Website",
         caseStudy: "#",
       },
     ],

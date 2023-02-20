@@ -12,7 +12,7 @@
 }
 
 section {
-  @apply flex flex-col px-[5%] sm:px-[10%] md:px-[15%] lg:px-[20%] relative min-h-screen;
+  @apply flex flex-col px-[5%] sm:px-[10%] md:px-[15%] lg:px-[20%] relative;
 }
 
 h1 {

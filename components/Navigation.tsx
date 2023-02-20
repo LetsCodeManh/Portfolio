@@ -27,7 +27,7 @@ const Navigation = () => {
           isActive ? "pointer-events" : "pointer-events-none"
         }`}
       >
-        <NavigationMenuList isActive={isActive} />
+        <NavigationMenuList isActive={isActive} setIsActive={setIsActive} />
         <NavigationButton isActive={isActive} />
       </motion.nav>
     </>

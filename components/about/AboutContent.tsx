@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 import { aboutSectionIcons } from "../constants/about";
 import SquareButton from "../reuse/SquareButton";
@@ -9,7 +10,7 @@ const AboutContent = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.6 }}
-      className="bg-secondary dark:bg-primary xl:translate-x-[200px] sm:-translate-y-[50px] p-8 lg:p-12 xl:p-16 rounded-2xl flex flex-col gap-4 max-w-[750px] z-[1]"
+      className="bg-secondary dark:bg-primary p-8  lg:p-12 xl:p-16 rounded-2xl flex flex-col gap-4"
     >
       <motion.h2
         initial="hidden"
@@ -62,17 +63,20 @@ const AboutContent = () => {
             />
           </motion.div>
         ))}
-        <motion.a
+        <motion.div
           initial="hidden"
           whileInView="show"
           variants={fadeIn("up", "tween", 1.2, 1)}
-          whileHover={{ scale: 1.2, borderRadius: "3.5rem" }}
-          whileTap={{ scale: 0.9 }}
-          href="#nothing"
-          className="center h-12 lg:h-14 px-4 text font-extrabold rounded-2xl bg-primary dark:bg-secondary text-dark dark:text-dark  text-lg"
         >
-          More!
-        </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.2, borderRadius: "3.5rem" }}
+            whileTap={{ scale: 0.9 }}
+            href="#nothing"
+            className="center h-12 lg:h-14 px-4 text font-extrabold rounded-2xl bg-primary dark:bg-secondary text-dark dark:text-dark  text-lg"
+          >
+            More!
+          </motion.a>
+        </motion.div>
       </motion.div>
     </motion.div>
   );
