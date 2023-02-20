@@ -18,6 +18,21 @@ type projects = {
   ];
 };
 
+export const projectSectionLink = [
+  {
+    name: "Frontend",
+    href: "#frontend",
+  },
+  {
+    name: "Backend",
+    href: "#backend",
+  },
+  {
+    name: "Full-Stack",
+    href: "#fullstack",
+  },
+];
+
 export const projectSectionInfo: projects[] = [
   {
     id: "1",

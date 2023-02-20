@@ -17,12 +17,12 @@ const NavigationMenuList = ({ isActive, setIsActive }: Props) => {
           variants={itemNav(index)}
           whileHover={{ scale: 1.1 }}
           key={index}
-          className="navigation__item border-y-4 border-primary dark:border-secondary"
+          className="navigation__item border-y-4 border-dark dark:border-dark"
         >
           <motion.a
             whileTap={{ scale: 0.9 }}
             href={section.href}
-            className="navigation__link font-semibold relative block text-primary dark:text-secondary hover:text-dark dark:hover:text-dark"
+            className="navigation__link font-semibold relative block text-dark dark:text-dark hover:bg-primary dark:hover:bg-secondary transition-colors duration-300"
             onClick={() => setIsActive(false)}
           >
             <TextRandomizer text={section.label} />

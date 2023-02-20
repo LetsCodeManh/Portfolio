@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { aboutSectionIcons } from "../constants/about";
 import SquareButton from "../reuse/SquareButton";
 import { fadeIn } from "../utils/motion";
@@ -9,7 +10,7 @@ const AboutContent = () => {
     <motion.div
       initial="hidden"
       whileInView="show"
-      variants={fadeIn("up", "tween", 0, .5)}
+      variants={fadeIn("up", "tween", 0, 0.5)}
       className="bg-secondary dark:bg-primary p-8  lg:p-12 xl:p-16 rounded-2xl flex flex-col gap-4 shadow-2xl"
     >
       <motion.h1
@@ -49,7 +50,7 @@ const AboutContent = () => {
             <SquareButton
               key={index}
               target={icon.link.startsWith("#") ? "_self" : "_blank"}
-              stylesButton="bg-primary dark:bg-secondary"
+              stylesButton="border-dark dark:border-dark hover:bg-primary dark:hover:bg-secondary"
               stylesIcon="text-dark dark:text-dark"
               link={icon.link}
               icon={icon.icon}
@@ -62,14 +63,13 @@ const AboutContent = () => {
           whileInView="show"
           variants={fadeIn("up", "tween", 1.2, 1)}
         >
-          <motion.a
-            whileHover={{ scale: 1.2, borderRadius: "3.5rem" }}
+          <motion.div
+            whileHover={{ scale: 1.2, borderRadius: "99rem" }}
             whileTap={{ scale: 0.9 }}
-            href="#nothing"
-            className="center h-12 lg:h-14 px-4 text font-extrabold rounded-2xl bg-primary dark:bg-secondary text-dark dark:text-dark  text-lg"
+            className="center h-12 lg:h-14 px-4 text font-extrabold rounded-2xl text-dark dark:text-dark border-dark dark:border-dark hover:bg-primary dark:hover:bg-secondary border-2 transition-colors duration-300"
           >
-            More!
-          </motion.a>
+            <Link href="/about">More!</Link>
+          </motion.div>
         </motion.div>
       </motion.div>
     </motion.div>

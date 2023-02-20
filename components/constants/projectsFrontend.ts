@@ -108,7 +108,7 @@ export const projectsFrontend: projects[] = [
       {
         icon: faGithub,
         link: "https://github.com/LetsCodeManh/Cocktail-Website",
-        live: "https://myflix-test-website.netlify.app/login",
+        live: "https://letscodemanh.github.io/Cocktail-Website/",
         labelIcon: "Visit my Cocktail Website Repository",
         labelLive: "Visit my Cocktail Live Website",
         caseStudy: "#",

@@ -22,7 +22,7 @@ const SquareButton = ({
   return (
     <motion.a
       aria-label={label}
-      whileHover={{ scale: 1.2, borderRadius: "50%" }}
+      whileHover={{ scale: 1.2, borderRadius: "99rem" }}
       whileTap={{ scale: 0.9 }}
       href={link}
       target={target}

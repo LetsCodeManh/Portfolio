@@ -22,8 +22,8 @@ const NavigationButton = ({ isActive }: Props) => {
         <SquareButton
           key={index}
           target="_blank"
-          stylesButton="bg-primary dark:bg-secondary"
-          stylesIcon="text-secondary dark:text-primary"
+          stylesButton="border-dark dark:border-dark hover:bg-primary dark:hover:bg-secondary"
+          stylesIcon="text-dark dark:text-dark"
           link={social.link}
           icon={social.icon}
           label={social.label}
@@ -32,15 +32,15 @@ const NavigationButton = ({ isActive }: Props) => {
 
       <motion.button
         aria-label="Toggle theme"
-        whileHover={{ scale: 1.2, borderRadius: "50%" }}
+        whileHover={{ scale: 1.2, borderRadius: "99rem" }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
-        className={`square bg-primary dark:bg-secondary`}
+        className={`square border-dark dark:border-dark hover:bg-primary dark:hover:bg-secondary`}
       >
         <FontAwesomeIcon
           icon={currentTheme === "dark" ? faSun : faMoon}
           size="2xl"
-          className="text-secondary dark:text-primary"
+          className="text-dark dark:text-dark"
         />
       </motion.button>
     </motion.div>

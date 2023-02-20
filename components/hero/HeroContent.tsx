@@ -46,8 +46,8 @@ const HeroContent = () => {
           >
             <SquareButton
               target={icon.link.startsWith("#") ? "_self" : "_blank"}
-              stylesButton="bg-secondary dark:bg-primary"
-              stylesIcon="text-primary dark:text-secondary"
+              stylesButton="border-dark dark:border-dark hover:bg-secondary dark:hover:bg-primary"
+              stylesIcon="text-dark dark:text-dark"
               link={icon.link}
               icon={icon.icon}
               label={icon.label}

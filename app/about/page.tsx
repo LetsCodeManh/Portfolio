@@ -1,7 +1,3 @@
-export default () => {
-  return (
-    <div>
-      Something
-    </div>
-  )
+export default function Page() {
+  return <div>Hello</div>;
 }

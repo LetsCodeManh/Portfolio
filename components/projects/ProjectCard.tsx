@@ -46,13 +46,20 @@ const ProjectCard = ({ project, index, active, setActive }: Props) => {
           <h2 className="biggerText">{project.title}</h2>
           {project.interact.map((item: any, index: number) => (
             <div key={index} className="flex gap-4 items-center">
-              <a href={item.link} aria-label={item.labelIcon}>
+              <a
+                href={item.link}
+                aria-label={item.labelIcon}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={item.icon} color="#FFFFFF" size="xl" />
               </a>
               <a
                 href={item.live}
                 className="text projectLink"
                 aria-label={item.labelLive}
+                target="_blank"
+                rel="noreferrer"
               >
                 Live
               </a>
