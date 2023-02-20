@@ -7,7 +7,7 @@ import ProjectHeader from "@/components/projects/ProjectHeader";
 import HomeButton from "@/components/reuse/HomeButton";
 import ScrollUp from "@/components/reuse/ScrollUp";
 
-export default function Page() {
+export default function Projects() {
   return (
     <>
       <header className={`sectionContainer bg-primary dark:bg-secondary`}>

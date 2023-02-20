@@ -52,7 +52,7 @@ const ProjectCard = ({ project, index, active, setActive }: Props) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FontAwesomeIcon icon={item.icon} color="#FFFFFF" size="xl" />
+                <FontAwesomeIcon icon={item.icon} className="text-primary hover:text-secondary dark:hover:text-secondary transition-colors duration-300" size="xl" />
               </a>
               <a
                 href={item.live}
@@ -64,7 +64,7 @@ const ProjectCard = ({ project, index, active, setActive }: Props) => {
                 Live
               </a>
               <a href={item.caseStudy} className="text projectLink">
-                Case Study
+                CaseStudy
               </a>
             </div>
           ))}

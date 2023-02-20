@@ -11,16 +11,18 @@ const ProjectHeader = () => {
     <motion.div
       initial="hidden"
       whileInView="show"
-      className="min-h-screen downCenter text-center gap-8"
+      className="min-h-screen downCenter text-center gap-6"
     >
       <motion.h1
         variants={fadeIn("up", "tween", 0, 1)}
         className="header text-secondary dark:text-dark"
       >
-        Journey 🚀
+        🚀
+        <br/>
+        Journey 
         <br />
-        Through <br />
-        <TextRandomizer text="My Projects" />
+        Through My<br />
+        <TextRandomizer text="Projects" /> Library
       </motion.h1>
       <motion.h2 variants={fadeIn("up", "tween", 0.3, 1)} className="bigText">
         Welcome to my projects page. Take a journey through my completed
@@ -29,7 +31,7 @@ const ProjectHeader = () => {
       </motion.h2>
       <motion.div
         variants={fadeIn("up", "tween", 0.6, 1)}
-        className="center gap-6 flex-col sm:flex-row"
+        className="center gap-2 sm:gap-4 md:gap-8"
       >
         {projectSectionLink.map((project, index) => (
           <motion.div
@@ -42,7 +44,7 @@ const ProjectHeader = () => {
                 borderRadius: "99rem",
               }}
               whileTap={{ scale: 0.9 }}
-              className="border-2 p-4 rounded-2xl border-dark dark:border-dark hover:bg-secondary dark:hover:bg-primary transition-colors duration-500"
+              className="border-2 p-2 sm:p-4 rounded-2xl border-dark dark:border-dark hover:bg-secondary dark:hover:bg-primary transition-colors duration-500"
             >
               <a
                 href={project.href}
