@@ -18,10 +18,11 @@ const ProjectHeader = () => {
         className="header text-secondary dark:text-dark"
       >
         🚀
-        <br/>
-        Journey 
         <br />
-        Through My<br />
+        Journey
+        <br />
+        Through My
+        <br />
         <TextRandomizer text="Projects" /> Library
       </motion.h1>
       <motion.h2 variants={fadeIn("up", "tween", 0.3, 1)} className="bigText">
@@ -38,21 +39,17 @@ const ProjectHeader = () => {
             variants={fadeIn("up", "tween", index * 0.5, 1)}
             key={index}
           >
-            <motion.div
+            <motion.a
               whileHover={{
                 scale: 1.2,
                 borderRadius: "99rem",
               }}
               whileTap={{ scale: 0.9 }}
-              className="border-2 p-2 sm:p-4 rounded-2xl border-dark dark:border-dark hover:bg-secondary dark:hover:bg-primary transition-colors duration-500"
+              href={project.href}
+              className="border-2 p-2 sm:p-4 rounded-2xl border-dark dark:border-dark hover:bg-secondary dark:hover:bg-primary transition-colors duration-500 cursor-pointer text font-semibold text-dark dark:text-dark"
             >
-              <a
-                href={project.href}
-                className="text font-semibold text-dark dark:text-dark"
-              >
-                {project.name}
-              </a>
-            </motion.div>
+              {project.name}
+            </motion.a>
           </motion.div>
         ))}
       </motion.div>

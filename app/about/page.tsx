@@ -1,3 +1,4 @@
+import AboutContact from "@/components/about/AboutContact";
 import AboutProfile from "@/components/about/AboutProfile";
 import AboutSkills from "@/components/about/AboutSkills";
 import Footer from "@/components/Footer";
@@ -15,6 +16,7 @@ export default function AboutMe() {
       <main className="bg-primary dark:bg-secondary">
         <AboutProfile />
         <AboutSkills />
+        <AboutContact/>
       </main>
       <footer>
         <Footer />

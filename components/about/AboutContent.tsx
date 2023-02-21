@@ -66,9 +66,14 @@ const AboutContent = () => {
           <motion.div
             whileHover={{ scale: 1.2, borderRadius: "99rem" }}
             whileTap={{ scale: 0.9 }}
-            className="center h-12 lg:h-14 px-4 text font-extrabold rounded-2xl text-dark dark:text-dark border-dark dark:border-dark hover:bg-primary dark:hover:bg-secondary border-2 transition-colors duration-300"
+            className="rounded-2xl border-dark dark:border-dark border-2 overflow-hidden"
           >
-            <Link href="/about">More!</Link>
+            <Link
+              href="/about"
+              className="h-12 lg:h-14 px-4 text font-extrabold text-dark dark:text-dark hover:bg-primary dark:hover:bg-secondary transition-colors duration-300 center"
+            >
+              More!
+            </Link>
           </motion.div>
         </motion.div>
       </motion.div>
