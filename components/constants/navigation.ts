@@ -38,7 +38,7 @@ export const socials: social[] = [
     label: "Visit my LinkedIn profile",
   },
   {
-    link: "https://drive.google.com/file/d/1luJkiiMnfZZZaLVLEhtta0cc3J3OENzZ/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1JxykYXprMaDz9uX8n6WtMFK_022pbgS0/view?usp=sharing",
     icon: FaFileAlt,
     label: "Download my resume",
   },
