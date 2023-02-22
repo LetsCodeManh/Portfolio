@@ -1,3 +1,4 @@
+import Cursor from "@/components/reuse/Cursor";
 import { Quicksand } from "@next/font/google";
 import "../styles/globals.css";
 import "../styles/styles.css";
@@ -7,7 +8,6 @@ const quicksand = Quicksand({
   subsets: ["latin"],
 });
 
-
 export default function RootLayout({
   children,
 }: {
@@ -16,8 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body className={`${quicksand.className} `}>
+      <body className={`${quicksand.className} relative`}>
         <Provider>{children}</Provider>
+        <Cursor />
       </body>
     </html>
   );
