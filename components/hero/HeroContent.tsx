@@ -35,10 +35,7 @@ const HeroContent = () => {
         <span>I&apos;m here to help</span>. Take a look at what I can offer and{" "}
         <span>let&apos;s work together</span> to create something great.
       </motion.p>
-      <motion.div
-        variants={fadeIn("up", "tween", 0.9, 1)}
-        className="flexSide"
-      >
+      <motion.div variants={fadeIn("up", "tween", 0.9, 1)} className="flexSide">
         {heroSectionIcons.map((icon, index) => (
           <motion.div
             variants={fadeIn("up", "tween", index * 0.5, 1)}

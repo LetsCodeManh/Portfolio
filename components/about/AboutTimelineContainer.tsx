@@ -17,16 +17,16 @@ const AboutTimelineContainer = () => {
           key={index}
           className="bg-secondary dark:bg-primary rounded-2xl p-4 md:p-6 lg:p-8 flex flex-col gap-4"
         >
-          <h3 className="text text-primary dark:text-dark">
+          <h3 className="smallText text-primary dark:text-dark">
             {stage.locationDate}
           </h3>
-          <h2 className="biggerText text-dark dark:text-secondary">
+          <h2 className="bigText text-dark dark:text-secondary">
             | {stage.certificate}
           </h2>
           {stage.descriptions.length > 0 && (
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-4">
               {stage.descriptions.map((description, index) => (
-                <p key={index} className="text text-primary dark:text-dark">
+                <p key={index} className="smallText text-primary dark:text-dark">
                   {description}
                 </p>
               ))}

@@ -29,6 +29,11 @@ const AboutContent = () => {
         experience creating my own business has given me an excellent
         understanding of the consumer perspective and experience with web
         design.
+      </motion.p>
+      <motion.p
+        variants={fadeIn("up", "tween", 0.4, 1)}
+        className="text text-primary dark:text-secondary"
+      >
         <span>
           {" "}
           My goal as a developer is to join a dynamic company where I can

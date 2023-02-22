@@ -29,17 +29,17 @@ export const timeline: Props[] = [
     ],
   },
   {
-    locationDate: "Bertrandt GmbH | Angust 2019 - February 2021",
-    certificate: "Technical Prodcut Designer",
+    locationDate: "Bertrandt GmbH | August 2019 - February 2021",
+    certificate: "Technical Product Designer",
     descriptions: [
       "Developed a product in collaboration with Maserati using CAD.",
-      "Designed and created the product using CREO and CATIA, while also overseeing documentation and calcuting product specifications.",
+      "Designed and created the product using CREO and CATIA, while also overseeing documentation and calculating product specifications.",
       "Successfully completed the prototyping phase.",
     ],
   },
   {
     locationDate: "Bertrandt GmbH | September 2016 - July 2019",
-    certificate: "Apprenticeship - Technical Prodcut Designer",
+    certificate: "Apprenticeship - Technical Product Designer",
     descriptions: [],
   },
 ];

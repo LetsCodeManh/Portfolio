@@ -66,9 +66,9 @@ const ProjectCard = ({ project, index, active, setActive }: Props) => {
               >
                 Live
               </a>
-              <a href={item.caseStudy} className="text projectLink">
+              {item.caStudy === "#" && <a href={item.caseStudy} className="text projectLink">
                 CaseStudy
-              </a>
+              </a>}
             </div>
           ))}
         </div>

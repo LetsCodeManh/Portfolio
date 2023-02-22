@@ -22,12 +22,12 @@ const AboutPerson = () => {
           <span>technical product designer</span> and worked in the same company
           for an additional year.
         </motion.p>
-        <motion.p variants={fadeIn("up", "tween", .8, 1)}>
+        <motion.p variants={fadeIn("up", "tween", 0.8, 1)}>
           However, <span>my thirst for more challenges</span> led me to{" "}
-          <span>create my own company</span> where I tried out new things and
-          businesses.
+          <span>create my own company</span> where could try out new things and
+          experiment with different businesses.
         </motion.p>
-        <motion.p variants={fadeIn("up", "tween", .9, 1)}>
+        <motion.p variants={fadeIn("up", "tween", 0.9, 1)}>
           After a while, I decided to{" "}
           <span>pursue the path of a developer</span> and enrolled in a
           bootcamp. Now, I&apos;ve just <span>finished my bootcamp</span> and am{" "}
@@ -40,7 +40,7 @@ const AboutPerson = () => {
           variants={fadeIn("up", "tween", 1.2, 1)}
           className="biggerText"
         >
-          | Interess
+          | Interests
         </motion.h2>
         <motion.p variants={fadeIn("up", "tween", 1.3, 1)}>
           When I&apos;m not coding, I enjoy{" "}
@@ -50,7 +50,7 @@ const AboutPerson = () => {
         <motion.div
           initial="hidden"
           whileInView="show"
-          variants={fadeIn("up", "tween", 1.4, 1)}
+          variants={fadeIn("up", "tween", 0.5, 1)}
           className="flexDown"
         >
           {aboutInteress.map((interess, index) => (
@@ -59,9 +59,17 @@ const AboutPerson = () => {
               key={index}
               className="flex gap-4 items-center justify-center border-2 p-4 border-dark rounded-2xl"
             >
-              <div className="border-2 border-dark rounded-2xl p-2 center">
-                <Icon icon={interess.icon} size="3rem" className="dark:text-dark" />
-              </div>
+              <motion.div
+                whileHover={{ scale: 1.2, borderRadius: "99rem" }}
+                whileTap={{ scale: 0.9 }}
+                className="border-2 border-dark rounded-2xl p-2 center hover:bg-secondary dark:hover:bg-primary transition-colors duration-300"
+              >
+                <Icon
+                  icon={interess.icon}
+                  size="3rem"
+                  className="dark:text-dark"
+                />
+              </motion.div>
               <p className="flex-1 text font-semibold text-secondary dark:text-primary">
                 {interess.description}
               </p>

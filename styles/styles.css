@@ -23,7 +23,7 @@
 }
 
 .projectLink {
-  @apply font-semibold py-2 px-[.75rem] border-2 rounded-md hover:bg-secondary dark:hover:bg-secondary transition-colors duration-300;
+  @apply font-semibold py-1 px-[.75rem] border-2 rounded-md hover:bg-secondary dark:hover:bg-secondary transition-colors duration-300;
 }
 
 .flexDown {
