@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const ScrollUp = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -30,14 +31,16 @@ const ScrollUp = () => {
   };
 
   return (
-    <button
+    <motion.button
+      whileHover={{ scale: 1.2, borderRadius: "99rem" }}
+      whileTap={{ scale: 0.9 }}
       onClick={scrollToTop}
       className={`fixed navigation__hamburger sm:bottom-12 sm:right-12 bottom-6 right-6 z-50 h-12 px-4 rounded-2xl border-2 border-dark dark:border-dark text-dark dark:text-dark shadow-2xl font-semibold text transition-colors duration-300 hover:bg-secondary dark:hover:bg-primary bg-primary dark:bg-secondary cursor-pointer ${
         isVisible ? "block" : "hidden"
       }`}
     >
       Scroll to Top
-    </button>
+    </motion.button>
   );
 };
 

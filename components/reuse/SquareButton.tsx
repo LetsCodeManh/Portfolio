@@ -1,12 +1,12 @@
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
+import { IconType } from "react-icons";
+import Icon from "./ReactIconReuse";
 
 type Props = {
   stylesButton: string;
   stylesIcon: string;
   link: string;
-  icon: IconDefinition;
+  icon: IconType;
   target: string;
   label: string;
 };
@@ -28,7 +28,7 @@ const SquareButton = ({
       target={target}
       className={`${stylesButton} square`}
     >
-      <FontAwesomeIcon icon={icon} className={`${stylesIcon}`} size="xl" />
+      <Icon icon={icon} className={`${stylesIcon}`} />
     </motion.a>
   );
 };

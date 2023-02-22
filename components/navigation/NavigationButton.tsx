@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
-import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { socials } from "../constants/navigation";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SquareButton from "../reuse/SquareButton";
+import Icon from "../reuse/ReactIconReuse";
+import { MdDarkMode, MdLightMode } from "react-icons/md";
 
 type Props = {
   isActive: boolean;
@@ -37,9 +37,8 @@ const NavigationButton = ({ isActive }: Props) => {
         onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
         className={`square border-dark dark:border-dark hover:bg-primary dark:hover:bg-secondary`}
       >
-        <FontAwesomeIcon
-          icon={currentTheme === "dark" ? faSun : faMoon}
-          size="2xl"
+        <Icon
+          icon={currentTheme === "dark" ? MdLightMode : MdDarkMode}
           className="text-dark dark:text-dark"
         />
       </motion.button>

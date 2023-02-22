@@ -17,13 +17,13 @@ const AboutSkillsSection = ({ skillsTitle, skillsInfo }: Props) => {
     >
       <motion.h2
         variants={fadeIn("up", "tween", 0, 1)}
-        className="bigText text-dark dark:text-secondary"
+        className="text font-semibold text-dark dark:text-dark"
       >
         {skillsTitle}
       </motion.h2>
       <motion.div
         variants={fadeIn("up", "tween", 0, 1)}
-        className="flex gap-4 flex-wrap"
+        className="flex gap-4 flex-wrap justify-evenly"
       >
         {skillsInfo.map((icon: any, index: number) => (
           <motion.div
@@ -32,7 +32,7 @@ const AboutSkillsSection = ({ skillsTitle, skillsInfo }: Props) => {
           >
             <SkillsIcon
               key={index}
-              stylesButton={`border-primary dark:border-primary hover:bg-secondary dark:hover:bg-primary`}
+              stylesButton={`border-primary dark:border-secondary hover:bg-primary dark:hover:bg-secondary`}
               stylesIcon="text-dark dark:text-dark"
               icon={icon.icon}
             />

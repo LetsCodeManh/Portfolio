@@ -1,5 +1,5 @@
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { IconType } from "react-icons";
+import { FaGithub } from "react-icons/fa";
 
 type projects = {
   id: string;
@@ -8,7 +8,7 @@ type projects = {
   technology: string;
   interact: [
     {
-      icon: IconDefinition;
+      icon: IconType;
       link: string;
       live: string;
       labelIcon: string;
@@ -26,7 +26,7 @@ export const projectsFullStack: projects[] = [
     technology: "Angular | Material | TypeScript",
     interact: [
       {
-        icon: faGithub,
+        icon: FaGithub,
         link: "https://github.com/LetsCodeManh/myFlix-Angular-Client",
         live: "https://letscodemanh.github.io/myFlix-Angular-Client/welcome",
         labelIcon: "Visit my myFlix Repository",
@@ -42,7 +42,7 @@ export const projectsFullStack: projects[] = [
     technology: "React | Bootstrap | Redux",
     interact: [
       {
-        icon: faGithub,
+        icon: FaGithub,
         link: "https://github.com/LetsCodeManh/myFlix-client",
         live: "https://myflix-test-website.netlify.app/login",
         labelIcon: "Visit my myFlix Repository",
@@ -58,7 +58,7 @@ export const projectsFullStack: projects[] = [
     technology: "NextJS 13 | Tailwind | Prisma",
     interact: [
       {
-        icon: faGithub,
+        icon: FaGithub,
         link: "https://github.com/LetsCodeManh/random-quotes",
         live: "https://random-quotes-rose.vercel.app/",
         labelIcon: "Visit Chucknorris Quotes Repository",
@@ -74,7 +74,7 @@ export const projectsFullStack: projects[] = [
     technology: "React Native | Expo | Firebase",
     interact: [
       {
-        icon: faGithub,
+        icon: FaGithub,
         link: "https://github.com/LetsCodeManh/ChatApp",
         live: "https://snack.expo.dev/@letscodemanh/a27d8d",
         labelIcon: "Visit ChatApp Repository",
@@ -90,7 +90,7 @@ export const projectsFullStack: projects[] = [
     technology: "React Native | Expo | Firebase",
     interact: [
       {
-        icon: faGithub,
+        icon: FaGithub,
         link: "https://github.com/LetsCodeManh/MeetApp",
         live: "https://letscodemanh.github.io/MeetApp/",
         labelIcon: "Visit MeetApp Repository",

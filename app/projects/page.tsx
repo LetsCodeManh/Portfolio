@@ -1,3 +1,4 @@
+"use client"
 import { projectsBackend } from "@/components/constants/projectsBackend";
 import { projectsFrontend } from "@/components/constants/projectsFrontend";
 import { projectsFullStack } from "@/components/constants/projectsFullStack";

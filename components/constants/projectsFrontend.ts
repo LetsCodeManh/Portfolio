@@ -1,5 +1,5 @@
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { IconType } from "react-icons";
+import { FaGithub } from "react-icons/fa";
 
 type projects = {
   id: string;
@@ -8,7 +8,7 @@ type projects = {
   technology: string;
   interact: [
     {
-      icon: IconDefinition;
+      icon: IconType;
       link: string;
       live: string;
       labelIcon: string;
@@ -26,7 +26,7 @@ export const projectsFrontend: projects[] = [
     technology: "React | CSS | Vite",
     interact: [
       {
-        icon: faGithub,
+        icon: FaGithub,
         link: "https://github.com/LetsCodeManh/ManhPortfolio",
         live: "https://letscodemanh.github.io/ManhPortfolio/",
         labelIcon: "Visit my past Portfolio Repository",
@@ -42,7 +42,7 @@ export const projectsFrontend: projects[] = [
     technology: "NextJS 13 | Tailwind | Framer Motion",
     interact: [
       {
-        icon: faGithub,
+        icon: FaGithub,
         link: "https://github.com/LetsCodeManh/manh-nguyen",
         live: "https://manhngdev.com/",
         labelIcon: "Visit my latest Portfolio Repository",
@@ -58,7 +58,7 @@ export const projectsFrontend: projects[] = [
     technology: "HTML | CSS | JavaScript",
     interact: [
       {
-        icon: faGithub,
+        icon: FaGithub,
         link: "https://github.com/LetsCodeManh/Hyrule-Compendium-js-app",
         live: "https://letscodemanh.github.io/Hyrule-Compendium-js-app/",
         labelIcon: "Visit my Zelda Repository",
@@ -74,7 +74,7 @@ export const projectsFrontend: projects[] = [
     technology: "React | Tailwind | I18next",
     interact: [
       {
-        icon: faGithub,
+        icon: FaGithub,
         link: "https://github.com/LetsCodeManh/OlgaWebsite",
         live: "https://letscodemanh.github.io/OlgaWebsite/",
         labelIcon: "Visit my Consulting Repository",
@@ -90,7 +90,7 @@ export const projectsFrontend: projects[] = [
     technology: "React | TypeScript",
     interact: [
       {
-        icon: faGithub,
+        icon: FaGithub,
         link: "https://github.com/LetsCodeManh/energyspektrum",
         live: "https://letscodemanh.github.io/energyspektrum/",
         labelIcon: "Visit Solar Repository",
@@ -106,7 +106,7 @@ export const projectsFrontend: projects[] = [
     technology: "HMTL | CSS",
     interact: [
       {
-        icon: faGithub,
+        icon: FaGithub,
         link: "https://github.com/LetsCodeManh/Cocktail-Website",
         live: "https://letscodemanh.github.io/Cocktail-Website/",
         labelIcon: "Visit my Cocktail Website Repository",

@@ -1,5 +1,5 @@
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FaGithub } from "react-icons/fa";
+import { IconType } from "react-icons/lib";
 
 type projects = {
   id: string;
@@ -8,7 +8,7 @@ type projects = {
   technology: string;
   interact: [
     {
-      icon: IconDefinition;
+      icon: IconType;
       link: string;
       live: string;
       labelIcon: string;
@@ -26,7 +26,7 @@ export const projectsBackend: projects[] = [
     technology: "MongoDB | Express | Heroku",
     interact: [
       {
-        icon: faGithub,
+        icon: FaGithub,
         link: "https://github.com/LetsCodeManh/myFlix-server",
         live: "https://young-journey-11100.herokuapp.com/",
         labelIcon: "Visit myFlix server Repository",

@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Icon from "../reuse/ReactIconReuse";
 import { fadeIn } from "../utils/motion";
 
 type Props = {
@@ -52,7 +52,10 @@ const ProjectCard = ({ project, index, active, setActive }: Props) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <FontAwesomeIcon icon={item.icon} className="text-primary hover:text-secondary dark:hover:text-secondary transition-colors duration-300" size="xl" />
+                <Icon
+                  icon={item.icon}
+                  className="text-primary hover:text-secondary dark:hover:text-secondary transition-colors duration-300"
+                />
               </a>
               <a
                 href={item.live}

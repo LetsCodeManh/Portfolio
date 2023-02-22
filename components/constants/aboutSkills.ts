@@ -3,7 +3,7 @@ import {
   FaAngular,
   FaAws,
   FaBootstrap,
-  FaCss3,
+  FaCss3Alt,
   FaFigma,
   FaGitAlt,
   FaGithub,
@@ -55,7 +55,7 @@ export const frontendSkills: social[] = [
     color: "#",
   },
   {
-    icon: FaCss3,
+    icon: FaCss3Alt,
     color: "#",
   },
   {
