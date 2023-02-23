@@ -18,11 +18,11 @@ const Thankyou = () => {
           bring to the table.
         </p>
         <p className="semibold">
-          If you're interested in learning more about my other projects, please
-          click the link below to check out my portfolio. And if you have any
-          questions or would like to connect, don't hesitate to reach out. I'm
-          always happy to hear from fellow developers and potential
-          collaborators.
+          If you&apos;re interested in learning more about my other projects,
+          please click the link below to check out my portfolio. And if you have
+          any questions or would like to connect, don&apos;t hesitate to reach
+          out. I&apos;m always happy to hear from fellow developers and
+          potential collaborators.
         </p>
         <div className="flex gap-4">
           <motion.div
