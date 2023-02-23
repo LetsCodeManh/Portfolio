@@ -57,3 +57,7 @@
 .formGroup {
   @apply relative text-dark dark:text-dark;
 }
+
+.backgroundImage {
+  background-image: url("../public/CaseHero.jpg")
+}

@@ -15,8 +15,9 @@ const HomeButton = () => {
       <Link
         href="/"
         className="h-12 w-14 shadow-2xl transition-colors duration-300 center hover:bg-secondary dark:hover:bg-primary cursor-pointer bg-primary dark:bg-secondary"
+        aria-label="Back to home page"
       >
-        <Icon icon={FaHome} className="text-dark dark:text-dark" size="2rem"/>
+        <Icon icon={FaHome} className="text-dark dark:text-dark" size="2rem" />
       </Link>
     </motion.div>
   );

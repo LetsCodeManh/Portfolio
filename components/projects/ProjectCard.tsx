@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import Icon from "../reuse/ReactIconReuse";
 import { fadeIn } from "../utils/motion";
 
@@ -66,9 +67,9 @@ const ProjectCard = ({ project, index, active, setActive }: Props) => {
               >
                 Live
               </a>
-              {item.caStudy === "#" && <a href={item.caseStudy} className="text projectLink">
+              {item.caseStudy !== "#" && <Link href={item.caseStudy} className="text projectLink">
                 CaseStudy
-              </a>}
+              </Link>}
             </div>
           ))}
         </div>

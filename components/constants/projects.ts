@@ -62,7 +62,7 @@ export const projectSectionInfo: projects[] = [
         live: "https://manhngdev.com/",
         labelIcon: "Visit my latest Portfolio Repository",
         labelLive: "Visit my latest Portfolio Live Website",
-        caseStudy: "#",
+        caseStudy: "/casestudy",
       },
     ],
   },

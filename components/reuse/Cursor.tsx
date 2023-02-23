@@ -7,9 +7,6 @@ const Cursor = () => {
     x: 0,
     y: 0,
   });
-  console.log(mousePosition);
-
-  // Set cursor variant to change color on hover text
 
   useEffect(() => {
     const mouseMove = (e: MouseEvent) => {
@@ -37,7 +34,7 @@ const Cursor = () => {
   // function for textLeave and textEnter
   return (
     <motion.div
-      className="bg-primary z-[100] h-8 w-8 rounded-full fixed top-0 left-0 pointer-events-none mix-blend-difference"
+      className="bg-primary z-[100] h-8 w-8 rounded-full fixed top-0 left-0 pointer-events-none mix-blend-exclusion"
       variants={variants}
       animate="default"
     />

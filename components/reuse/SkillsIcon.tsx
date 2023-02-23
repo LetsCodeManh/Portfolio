@@ -10,13 +10,13 @@ type Props = {
 
 const SkillsIcon = ({ stylesButton, stylesIcon, icon }: Props) => {
   return (
-    <motion.button
+    <motion.div
       whileHover={{ scale: 1.2, borderRadius: "99rem"}}
       whileTap={{ scale: 0.9 }}
       className={`${stylesButton} square`}
     >
       <Icon icon={icon} className={`${stylesIcon}`} />
-    </motion.button>
+    </motion.div>
   );
 };
 
