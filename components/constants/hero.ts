@@ -14,7 +14,7 @@ export const heroSectionIcons: heroSectionIcon[] = [
     label: "View Projects",
   },
   {
-    link: "https://drive.google.com/file/d/1JxykYXprMaDz9uX8n6WtMFK_022pbgS0/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1JxykYXprMaDz9uX8n6WtMFK_022pbgS0/view?usp=share_link",
     icon: FaFileAlt,
     label: "Download my resume",
   },

@@ -5,7 +5,7 @@ const HeroCase = () => {
       <div className="flex flex-col z-10 gap-4 text-primary fixed">
         <h1 className="subheader">Case Study</h1>
         <h2 className="header">Developing a Modern <br/>Portfolio Website</h2>
-        <p>Readtime: 7 min</p>
+        <p>Readtime: 10 min</p>
       </div>
     </div>
   );

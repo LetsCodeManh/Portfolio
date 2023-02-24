@@ -32,6 +32,7 @@ const Thankyou = () => {
             <Link
               href="projects"
               className="square border-primary dark:border-primary hover:bg-dark dark:hover:bg-dark"
+              aria-label="Visit my project pages"
             >
               <Icon
                 icon={GiJourney}
