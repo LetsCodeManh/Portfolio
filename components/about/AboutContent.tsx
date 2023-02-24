@@ -11,7 +11,7 @@ const AboutContent = () => {
       initial="hidden"
       whileInView="show"
       variants={fadeIn("up", "tween", 0, 0.5)}
-      className="bg-secondary dark:bg-primary p-8  lg:p-12 xl:p-16 rounded-2xl flex flex-col gap-4 shadow-2xl"
+      className="bg-secondary dark:bg-primary p-8  lg:p-12 xl:p-16 rounded-2xl flex flex-col gap-4 shadow-2xl flex-[3]"
     >
       <motion.h1
         variants={fadeIn("up", "tween", 0, 1)}
@@ -23,8 +23,8 @@ const AboutContent = () => {
         variants={fadeIn("up", "tween", 0.3, 1)}
         className="text text-primary dark:text-secondary"
       >
-        Hi, <span>I&apos;m Manh, a Full-Stack developer</span> looking to make a
-        career change. With
+        Hi, <span>I&apos;m Manh, a Full-Stack Developer based in Germany</span>{" "}
+        looking to make a career change. With
         <span> a background in business, design, and coding,</span> my
         experience creating my own business has given me an excellent
         understanding of the consumer perspective and experience with web

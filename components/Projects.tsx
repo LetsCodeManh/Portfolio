@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <section id="projects" className={`justify-center py-12 min-h-screen`}>
       <div className="flex flex-col gap-10">
-        <h1 className="subheader text-dark dark:text-primary">| Projects</h1>
+        <h1 className="subheader text-dark dark:text-dark">| Projects</h1>
         <div className="flex lg:flex-row flex-col min-h-[70vh] gap-4">
           {projectSectionInfo.map((project, index) => (
             <ProjectCard

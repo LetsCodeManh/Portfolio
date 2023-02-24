@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { heroSectionIcons } from "../constants/hero";
+import Icon from "../reuse/ReactIconReuse";
 import SquareButton from "../reuse/SquareButton";
 import { fadeIn } from "../utils/motion";
 
@@ -41,14 +42,21 @@ const HeroContent = () => {
             variants={fadeIn("up", "tween", index * 0.5, 1)}
             key={index}
           >
-            <SquareButton
+            <motion.a
+              aria-label={icon.label}
+              whileHover={{ scale: 1.2, borderRadius: "99rem" }}
+              whileTap={{ scale: 0.9 }}
+              href={icon.link}
               target={icon.link.startsWith("#") ? "_self" : "_blank"}
-              stylesButton="border-dark dark:border-dark hover:bg-secondary dark:hover:bg-primary"
-              stylesIcon="text-dark dark:text-dark"
-              link={icon.link}
-              icon={icon.icon}
-              label={icon.label}
-            />
+              className={`center h-12 px-3 lg:px-4 gap-2 lg:h-14 rounded-2xl border-2 transition-colors duration-300 border-dark dark:border-dark hover:bg-secondary dark:hover:bg-primary`}
+            >
+              <Icon icon={icon.icon} className={`text-dark dark:text-dark`} />
+              {icon.text && (
+                <p className={`text-dark dark:text-dark font-semibold`}>
+                  {icon.text}
+                </p>
+              )}
+            </motion.a>
           </motion.div>
         ))}
       </motion.div>

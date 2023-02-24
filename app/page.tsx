@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import AboutSkills from "@/components/about/AboutSkills";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <main className={`z-0 bg-primary dark:bg-secondary`}>
         <Hero />
         <About />
+        <AboutSkills />
         <Projects />
         <Contact />
       </main>
