@@ -72,17 +72,17 @@ const ProjectCard = ({ project, index, active, setActive }: Props) => {
               >
                 Live
               </motion.a>
-              <motion.div
-                whileHover={{ scale: 1.2, borderRadius: "99rem" }}
-                whileTap={{ scale: 0.9 }}
-                className="rounded-2xl border-primary dark:border-primary border-2 overflow-hidden"
-              >
-                {item.caseStudy !== "#" && (
+              {item.caseStudy !== "" && (
+                <motion.div
+                  whileHover={{ scale: 1.2, borderRadius: "99rem" }}
+                  whileTap={{ scale: 0.9 }}
+                  className="rounded-2xl border-primary dark:border-primary border-2 overflow-hidden"
+                >
                   <Link href={item.caseStudy} className="text projectLink">
                     CaseStudy
                   </Link>
-                )}
-              </motion.div>
+                </motion.div>
+              )}
             </div>
           ))}
         </div>
@@ -93,8 +93,8 @@ const ProjectCard = ({ project, index, active, setActive }: Props) => {
 
 export default ProjectCard;
 
-
-{/* <motion.div
+{
+  /* <motion.div
 whileHover={{ scale: 1.2, borderRadius: "99rem" }}
 whileTap={{ scale: 0.9 }}
 className="rounded-2xl border-dark dark:border-dark border-2 overflow-hidden"
@@ -104,4 +104,5 @@ className="rounded-2xl border-dark dark:border-dark border-2 overflow-hidden"
   className="h-12 lg:h-14 px-4 text font-extrabold text-dark dark:text-dark hover:bg-primary dark:hover:bg-secondary transition-colors duration-300 center"
 >
   More!
-</Link> */}
+</Link> */
+}
