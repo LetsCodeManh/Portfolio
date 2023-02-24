@@ -18,7 +18,7 @@ export default function RootLayout({
       <head />
       <body className={`${quicksand.className} relative`}>
         <Provider>{children}</Provider>
-        {/* <Cursor /> */}
+        <Cursor />
       </body>
     </html>
   );
