@@ -47,7 +47,10 @@ const ProjectCard = ({ project, index, active, setActive }: Props) => {
           <h2 className="biggerText">{project.title}</h2>
           {project.interact.map((item: any, index: number) => (
             <div key={index} className="flex gap-4 items-center">
-              <a
+              <motion.a
+                whileHover={{ scale: 1.2, borderRadius: "99rem" }}
+                whileTap={{ scale: 0.9 }}
+                className={`square hover:bg-secondary dark:hover:bg-secondary`}
                 href={item.link}
                 aria-label={item.labelIcon}
                 target="_blank"
@@ -55,21 +58,31 @@ const ProjectCard = ({ project, index, active, setActive }: Props) => {
               >
                 <Icon
                   icon={item.icon}
-                  className="text-primary hover:text-secondary dark:hover:text-secondary transition-colors duration-300"
+                  className="text-primary dark:text-primary"
                 />
-              </a>
-              <a
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.2, borderRadius: "99rem" }}
+                whileTap={{ scale: 0.9 }}
                 href={item.live}
-                className="text projectLink"
+                className="text projectLink rounded-2xl border-primary dark:border-primary border-2"
                 aria-label={item.labelLive}
                 target="_blank"
                 rel="noreferrer"
               >
                 Live
-              </a>
-              {item.caseStudy !== "#" && <Link href={item.caseStudy} className="text projectLink">
-                CaseStudy
-              </Link>}
+              </motion.a>
+              <motion.div
+                whileHover={{ scale: 1.2, borderRadius: "99rem" }}
+                whileTap={{ scale: 0.9 }}
+                className="rounded-2xl border-primary dark:border-primary border-2 overflow-hidden"
+              >
+                {item.caseStudy !== "#" && (
+                  <Link href={item.caseStudy} className="text projectLink">
+                    CaseStudy
+                  </Link>
+                )}
+              </motion.div>
             </div>
           ))}
         </div>
@@ -79,3 +92,16 @@ const ProjectCard = ({ project, index, active, setActive }: Props) => {
 };
 
 export default ProjectCard;
+
+
+{/* <motion.div
+whileHover={{ scale: 1.2, borderRadius: "99rem" }}
+whileTap={{ scale: 0.9 }}
+className="rounded-2xl border-dark dark:border-dark border-2 overflow-hidden"
+>
+<Link
+  href="/about"
+  className="h-12 lg:h-14 px-4 text font-extrabold text-dark dark:text-dark hover:bg-primary dark:hover:bg-secondary transition-colors duration-300 center"
+>
+  More!
+</Link> */}

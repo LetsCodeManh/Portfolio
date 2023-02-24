@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 
 const Cursor = () => {
   const [mousePosition, setMousePosition] = useState({
-    x: 0,
-    y: 0,
+    x: -100,
+    y: -100,
   });
 
   useEffect(() => {
