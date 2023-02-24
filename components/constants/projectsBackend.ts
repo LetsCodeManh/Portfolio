@@ -31,7 +31,7 @@ export const projectsBackend: projects[] = [
         live: "https://young-journey-11100.herokuapp.com/",
         labelIcon: "Visit myFlix server Repository",
         labelLive: "Visit myFlex server Live Website",
-        caseStudy: "#",
+        caseStudy: "",
       },
     ],
   },

@@ -9,7 +9,14 @@
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  cursor: none;
+}
+
+@media (min-width: 1024px) {
+  *,
+  *::before,
+  *::after {
+    cursor: none;
+  }
 }
 
 section, .sectionContainer {
