@@ -18,7 +18,7 @@ const ProjectCard = ({ project, index, active, setActive }: Props) => {
       whileInView="show"
       variants={fadeIn("up", "spring", index * 0.25, 0.75)}
       key={index}
-      className={`relative ${
+      className={`card relative ${
         active === project.id
           ? "lg:flex-[2.5] flex-[10]"
           : "lg:flex-[0.5] flex-[2] cursor-pointer"

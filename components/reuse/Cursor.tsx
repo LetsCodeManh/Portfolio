@@ -7,6 +7,8 @@ const Cursor = () => {
     x: -100,
     y: -100,
   });
+  const [isHoveringInteractiveElement, setIsHoveringInteractiveElement] =
+    useState(false);
 
   useEffect(() => {
     const mouseMove = (e: MouseEvent) => {
@@ -16,25 +18,53 @@ const Cursor = () => {
       });
     };
 
+    const mouseEnter = () => {
+      setIsHoveringInteractiveElement(true);
+    };
+
+    const mouseLeave = () => {
+      setIsHoveringInteractiveElement(false);
+    };
+
     window.addEventListener("mousemove", mouseMove);
+    const interactiveElements = document.querySelectorAll(
+      "a, button, input, select, textarea, .card"
+    );
+
+    interactiveElements.forEach((el) => {
+      el.addEventListener("mouseenter", mouseEnter);
+      el.addEventListener("mouseleave", mouseLeave);
+    });
+
+    document.addEventListener("click", () => {
+      setIsHoveringInteractiveElement(false);
+    });
 
     return () => {
       window.removeEventListener("mousemove", mouseMove);
+      interactiveElements.forEach((el) => {
+        el.removeEventListener("mouseenter", mouseEnter);
+        el.removeEventListener("mouseleave", mouseLeave);
+      });
+      document.removeEventListener("click", () => {
+        setIsHoveringInteractiveElement(false);
+      });
     };
   }, []);
 
   // Variant animation
   const variants = {
     default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16,
+      scale: isHoveringInteractiveElement ? 0.4 : 1,
+      x: mousePosition.x - 20,
+      y: mousePosition.y - 20,
     },
   };
 
   // function for textLeave and textEnter
   return (
     <motion.div
-      className="bg-primary hidden lg:block z-[100] h-8 w-8 rounded-full fixed top-0 left-0 pointer-events-none mix-blend-exclusion"
+      className="bg-primary hidden lg:block z-[100] h-10 w-10 rounded-full fixed top-0 left-0 pointer-events-none mix-blend-exclusion"
       variants={variants}
       animate="default"
     />

@@ -18,7 +18,7 @@ const ProjectContainer = ({ sectionId, sectionTitle, projectInfo, number }: Prop
         <h1 className="subheader text-dark dark:text-primary">
           {sectionTitle}
         </h1>
-        <div className="flex flex-col min-h-[70vh] gap-4">
+        <div className="flex flex-col lg:flex-row min-h-[70vh] gap-4">
           {projectInfo.map((project: any, index: number) => (
             <ProjectCard
               key={index}
