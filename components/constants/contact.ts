@@ -20,7 +20,7 @@ export const contactSectionSocials: contact[] = [
     label: "Check out my GitHub Page",
   },
   {
-    link: "https://linkedin.com/in/manh-nguyen-0a094524b",
+    link: "https://linkedin.com/in/manhngdev",
     icon: FaLinkedinIn,
     label: "Contact me on LinkedIn",
   },

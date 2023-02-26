@@ -23,7 +23,7 @@ const AboutSkillsSection = ({ skillsTitle, skillsInfo }: Props) => {
       </motion.h2>
       <motion.div
         variants={fadeIn("up", "tween", 0, 1)}
-        className="flex gap-4 flex-wrap justify-evenly"
+        className="flex gap-4 flex-wrap justify-evenly lg:justify-start"
       >
         {skillsInfo.map((icon: any, index: number) => (
           <motion.div

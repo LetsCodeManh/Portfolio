@@ -1,10 +1,11 @@
-"use client"
+"use client";
 import { projectsBackend } from "@/components/constants/projectsBackend";
 import { projectsFrontend } from "@/components/constants/projectsFrontend";
 import { projectsFullStack } from "@/components/constants/projectsFullStack";
 import Footer from "@/components/Footer";
 import ProjectContainer from "@/components/projects/ProjectContainer";
 import ProjectHeader from "@/components/projects/ProjectHeader";
+import Cursor from "@/components/reuse/Cursor";
 import HomeButton from "@/components/reuse/HomeButton";
 import ScrollUp from "@/components/reuse/ScrollUp";
 
@@ -16,7 +17,6 @@ export default function Projects() {
         <ProjectHeader />
         <ScrollUp />
       </header>
-
       <main className="bg-primary dark:bg-secondary">
         <ProjectContainer
           sectionId="frontend"

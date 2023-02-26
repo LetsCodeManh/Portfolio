@@ -5,10 +5,12 @@ import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import AboutSkills from "@/components/about/AboutSkills";
+import Cursor from "@/components/reuse/Cursor";
 
 export default function Home() {
   return (
     <>
+      <Cursor />
       <header className={`relative`}>
         <Navigation />
       </header>

@@ -33,7 +33,7 @@ export const socials: social[] = [
     label: "Visit my GitHub profile",
   },
   {
-    link: "https://linkedin.com/in/manh-nguyen-0a094524b",
+    link: "https://linkedin.com/in/manhngdev",
     icon: FaLinkedinIn,
     label: "Visit my LinkedIn profile",
   },

@@ -1,4 +1,3 @@
-import Cursor from "@/components/reuse/Cursor";
 import { Quicksand } from "@next/font/google";
 import "../styles/globals.css";
 import "../styles/styles.css";
@@ -18,7 +17,6 @@ export default function RootLayout({
       <head />
       <body className={`${quicksand.className} relative`}>
         <Provider>{children}</Provider>
-        <Cursor />
       </body>
     </html>
   );

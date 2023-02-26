@@ -28,7 +28,7 @@ export const projectsFullStack: projects[] = [
       {
         icon: FaGithub,
         link: "https://github.com/LetsCodeManh/myFlix-Angular-Client",
-        live: "https://letscodemanh.github.io/myFlix-Angular-Client/welcome",
+        live: "https://letscodemanh.github.io/myFlix-Angular-Client/",
         labelIcon: "Visit my myFlix Repository",
         labelLive: "Visit myFlix Live Website",
         caseStudy: "",

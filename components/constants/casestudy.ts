@@ -1,7 +1,6 @@
 import { IconType } from "react-icons";
 import {
   FaEnvelope,
-  FaFileAlt,
   FaGithub,
   FaLinkedinIn,
   FaPhone,
@@ -31,7 +30,7 @@ export const introductionLinks: contact[] = [
     label: "Check out my GitHub Page",
   },
   {
-    link: "https://linkedin.com/in/manh-nguyen-0a094524b",
+    link: "https://linkedin.com/in/manhngdev",
     icon: FaLinkedinIn,
     label: "Contact me on LinkedIn",
   },
@@ -175,7 +174,7 @@ export const nextSteps = [
 
 export const thankyouLinks: contact[] = [
   {
-    link: "https://linkedin.com/in/manh-nguyen-0a094524b",
+    link: "https://linkedin.com/in/manhngdev",
     icon: FaLinkedinIn,
     label: "Contact me on LinkedIn",
   },
