@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { projectSectionLink } from "../constants/projects";
-import TextRandomizer from "../reuse/TextRandomizer";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
@@ -23,7 +22,7 @@ const ProjectHeader = () => {
         <br />
         Through My
         <br />
-        <TextRandomizer text="Projects" /> Library
+        Projects Library
       </motion.h1>
       <motion.h2 variants={fadeIn("up", "tween", 0.3, 1)} className="bigText">
         Welcome to my projects page. Take a journey through my completed
