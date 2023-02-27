@@ -58,6 +58,11 @@ const Cursor = () => {
       scale: isHoveringInteractiveElement ? 0.4 : 1,
       x: mousePosition.x - 20,
       y: mousePosition.y - 20,
+      transition: {
+        scale: { duration: .25 },
+        x: {duration: 0, delay: 0},
+        y: {duration: 0, delay: 0}
+      },
     },
   };
 
