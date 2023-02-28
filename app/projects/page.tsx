@@ -12,6 +12,7 @@ import ScrollUp from "@/components/reuse/ScrollUp";
 export default function Projects() {
   return (
     <>
+      <Cursor />
       <header className={`sectionContainer bg-primary dark:bg-secondary`}>
         <HomeButton />
         <ProjectHeader />
