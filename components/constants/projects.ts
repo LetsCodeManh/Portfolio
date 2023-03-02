@@ -91,7 +91,7 @@ export const projectSectionInfo: projects[] = [
       {
         icon: FaGithub,
         link: "https://github.com/LetsCodeManh/OlgaWebsite",
-        live: "https://letscodemanh.github.io/OlgaWebsite/",
+        live: "https://olga-agovic.de/",
         labelIcon: "Visit my Consulting Repository",
         labelLive: "Visit Consulting Live Website",
         caseStudy: "",

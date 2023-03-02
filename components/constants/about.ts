@@ -1,6 +1,6 @@
 import { IconType } from "react-icons";
 import { FaEnvelope, FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { GiGrowth, GiMeditation, GiRiceCooker, GiRocket } from "react-icons/gi";
+import { GiMeditation, GiRiceCooker, GiRocket } from "react-icons/gi";
 
 type aboutSectionIcon = {
   link: string;

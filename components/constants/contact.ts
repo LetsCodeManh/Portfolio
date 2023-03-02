@@ -25,7 +25,7 @@ export const contactSectionSocials: contact[] = [
     label: "Contact me on LinkedIn",
   },
   {
-    link: "https://drive.google.com/file/d/1JxykYXprMaDz9uX8n6WtMFK_022pbgS0/view?usp=share_link",
+    link: "https://drive.google.com/file/d/1LJ6G0zifBBe8pJTCO1vu_7eXUszG1jkt/view?usp=sharing",
     icon: FaFileAlt,
     label: "Download my resume",
   },
