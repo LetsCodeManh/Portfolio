@@ -36,16 +36,16 @@ export const projectSectionLink = [
 export const projectSectionInfo: projects[] = [
   {
     id: "1",
-    image: "/Portfolio.png",
-    title: "Portfolio V1",
-    technology: "React | CSS | Vite",
+    image: "/Zelda.png",
+    title: "Zelda Hyrule Compendium",
+    technology: "HTML | CSS | JavaScript",
     interact: [
       {
         icon: FaGithub,
-        link: "https://github.com/LetsCodeManh/ManhPortfolio",
-        live: "https://letscodemanh.github.io/ManhPortfolio/",
-        labelIcon: "Visit my past Portfolio Repository",
-        labelLive: "Visit my past Portfolio Live Website",
+        link: "https://github.com/LetsCodeManh/Hyrule-Compendium-js-app",
+        live: "https://letscodemanh.github.io/Hyrule-Compendium-js-app/",
+        labelIcon: "Visit my Zelda Repository",
+        labelLive: "Visit Zelda Live Website",
         caseStudy: "",
       },
     ],
@@ -53,7 +53,7 @@ export const projectSectionInfo: projects[] = [
   {
     id: "2",
     image: "/Manh-Nguyen.png",
-    title: "Portfolio V2",
+    title: "Portfolio",
     technology: "NextJS 13 | Tailwind | Framer Motion",
     interact: [
       {
@@ -68,16 +68,16 @@ export const projectSectionInfo: projects[] = [
   },
   {
     id: "3",
-    image: "/Zelda.png",
-    title: "Zelda Hyrule Compendium",
-    technology: "HTML | CSS | JavaScript",
+    image: "/Solar.png",
+    title: "Solar Website",
+    technology: "React | TypeScript",
     interact: [
       {
         icon: FaGithub,
-        link: "https://github.com/LetsCodeManh/Hyrule-Compendium-js-app",
-        live: "https://letscodemanh.github.io/Hyrule-Compendium-js-app/",
-        labelIcon: "Visit my Zelda Repository",
-        labelLive: "Visit Zelda Live Website",
+        link: "https://github.com/LetsCodeManh/energyspektrum",
+        live: "https://letscodemanh.github.io/energyspektrum/",
+        labelIcon: "Visit Solar Repository",
+        labelLive: "Visit Solar Live Website",
         caseStudy: "",
       },
     ],
