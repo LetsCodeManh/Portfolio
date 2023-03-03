@@ -19,6 +19,7 @@ My personal website was built with the following technoliges:
 - TypeScript
 - Framer Motion
 - React Icons
+- Vercel
 
 ## How to Use
 
